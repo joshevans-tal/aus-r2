@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- Add your CSS links here -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- Add you JAVASCRIPT includes here -->
+     <!-- DATA -->
+     <script src="./data/scenario-config-01.js"></script>
+     <script src="./data/manage-copy-01.js"></script>
+     <!-- COMPONENTS -->
+    <script type="text/JAVASCRIPT" src="./includes/tc-navbar/tc-navbar-01.js"></script>
+    <script type="text/JAVASCRIPT" src="./includes/tc-header/tc-header.js"></script>
+    <script type="text/JAVASCRIPT" src="./includes/tc-footer/tc-footer.js"></script>
+    <script type="text/JAVASCRIPT" src="./includes/tc-ctas/tc-ctas.js"></script>
+    <script type="text/JAVASCRIPT" src="./includes/tc-card/tc-card.js"></script>
+    <script type="text/JAVASCRIPT" src="./includes/tc-switch/tc-switch.js"></script>
+    <script type="text/JAVASCRIPT" src="./includes/tc-cover-item/tc-cover-item.js"></script>
+    <script type="text/JAVASCRIPT" src="./includes/tc-inline-alert/tc-inline-alert.js"></script>
+    <script type="text/JAVASCRIPT" src="./js/tc-utilities.js"></script>
+    <script type="text/JAVASCRIPT" src="./includes/tc-slider-02/tc-data-slider-02.js"></script>
+    <script type="text/JAVASCRIPT" src="./includes/tc-tooltip/tc-tooltip.js"></script>
+    <script type="text/JAVASCRIPT" src="./includes/tc-modal/tc-modal.js"></script>
+
+     <!-- PAGE FUNCTIONS -->
+   
+    <!-- <script type="text/JAVASCRIPT" src="./includes/tc-cover-custom-ptn/tc-cover-custom-main-01.js"></script> -->
+    <script src="./page-scripts/03-cover-select/cover-state-death-current.js"></script>
+    <script src="./page-scripts/03-cover-select/cover-state-death-edit.js"></script>
+    <script src="./page-scripts/03-cover-select/cover-state-tpd-current.js"></script>
+    <script src="./page-scripts/03-cover-select/cover-state-tpd-edit.js"></script>
+    <script src="./page-scripts/03-cover-select/cover-state-ip-current.js"></script>
+    <script src="./page-scripts/03-cover-select/cover-state-ip-edit.js"></script>
+
+</head>
+<body>
+    <script>
+        document.body.innerHTML += tcModal(eduCoverTypes["title"], eduCoverTypes["content"], eduCoverTypes["modal footer"],eduCoverTypes["id"]);
+    </script>
+    <!-- 
+        THIS PAGE IS BUILT USING PAGE TEMPLATE SCRIPT 
+        Add elements content using id="content-container"
+    -->
+    <div id="slider-test"></div>
+    
+     <script src="./includes/tc-page-template/tc-page-template.js"></script>
+     <script>
+    // ----------------------------------
+    // SET UP BASIC PAGE TEMPLATE
+    // ----------------------------------
+    
+        createPage(
+            // string – page header text
+            "Choose your cover",
+            // string - header subhead text
+            "Select the cover types and benefits that best fit your needs. If you wish to keep your existing cover, you don’t need to do anything. ",
+            // string - default or bglight
+            "default",
+            // update browser window title  
+            "Select your cover"
+        ); 
+
+
+    </script>
+    <script src="./page-scripts/03-cover-select/cover-choice-page-structure.js">
+    // ----------------------------------
+    // THIS SCRIPT BUILDS MAIN SECTION CARDS
+    // ----------------------------------
+
+    /*
+        CREATED CARD IDs INCLUDE:
+        * death-card-container
+        * death-card-head
+        * death-card-body
+        * 
+        * tpd-card-container
+        * tpd-card-head
+        * tpd-card-body
+        * 
+        * ip-card-container
+        * ip-card-head
+        * ip-card-body
+    
+    */
+    </script>
+
+<!-- <script src="./state-current/tc-custom-cover/cover-state-death-current.js"> 
+
+    // ----------------------------------
+    // THIS SCRIPT BUILD INNER CARD WITHIN DEATH
+    // ----------------------------------
+
+    /*
+        CREATED CARD IDs INCLUDE:
+        * death-card-container
+        * death-card-head
+        * death-card-body
+        * 
+        * tpd-card-container
+        * tpd-card-head
+        * tpd-card-body
+        * 
+        * ip-card-container
+        * ip-card-head
+        * ip-card-body
+    
+    */
+    </script>-->
+</body>
+</html>
