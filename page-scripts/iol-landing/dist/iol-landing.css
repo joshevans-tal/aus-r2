@@ -1,0 +1,35 @@
+.iol-tile-container {
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+  min-height: 150px;
+}
+
+.iol-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 16px;
+}
+
+.iol-accent-bg {
+  background-color: #e9e6ed;
+}
+
+.iol-action {
+  text-align: center;
+  border: 1px solid #d5d5d5;
+  border-radius: 4px;
+}
+
+.iol-tile p {
+  text-align: center;
+  width: 100%;
+}
+
+.iol-action:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,13 @@
+@import '../../styles/brand';
+@import '../../styles/global';
+.alert-label{
+    margin: 0, 0, $spaceMedium 0;
+}
+
+.flex-gap-small{
+    gap:$spaceSmall;
+}
+
+.flex-gap-medium{
+    gap:$spaceMedium;
+}

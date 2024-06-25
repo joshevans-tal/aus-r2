@@ -1,0 +1,40 @@
+@import '../../styles/brand';
+@import '../../styles/global';
+
+.iol-tile-container{
+    display: flex;
+    align-items: stretch;
+    gap: 12px;
+    min-height: 150px;
+}
+.iol-tile{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    // text-align: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 16px;
+}
+
+.iol-accent-bg{
+    background-color: $brandColorPrimary1T10;
+}
+
+.iol-action{
+    // display: flex;
+    text-align: center;
+    // justify-content:center;
+    border: 1px solid $themeColorBorderDefault;
+    border-radius: $borderRadiusBase;
+}
+
+.iol-tile p{
+    text-align: center;
+    width: 100%;
+} 
+
+.iol-action:hover{
+    cursor: pointer;
+    box-shadow: $elevationMedium;
+}

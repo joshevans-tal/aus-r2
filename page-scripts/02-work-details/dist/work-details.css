@@ -1,0 +1,24 @@
+.tc-form-label {
+  margin-top: 24px;
+  display: flex;
+  justify-content: stretch;
+}
+
+.occ-question-container {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px 32px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.occ-question-container .form-element {
+  border-bottom: 1px solid #d5d5d5;
+  padding-bottom: 32px;
+}
+
+.occ-question-container .form-element:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}

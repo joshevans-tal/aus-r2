@@ -1,0 +1,11 @@
+.alert-label {
+  margin: 0, 0, calc($sizeBaseUnit * 4) 0;
+}
+
+.flex-gap-small {
+  gap: calc($sizeBaseUnit * 2);
+}
+
+.flex-gap-medium {
+  gap: calc($sizeBaseUnit * 4);
+}

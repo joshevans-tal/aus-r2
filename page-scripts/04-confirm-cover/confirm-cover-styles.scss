@@ -1,0 +1,22 @@
+@import '../../styles/brand';
+@import '../../styles/global';
+
+.arrow-divider{
+    display: flex;
+    justify-content: center;
+    // fill: $brandColorPrimary1;
+    filter: invert(.2) sepia(1) saturate(4) hue-rotate(232deg);
+    
+}
+
+path{
+    fill: $brandColorPrimary1;
+}
+
+// Used with text accompanying cover status tags
+.new-cover-status-title{
+    margin: $spaceMedium 0;
+    font-size: $fontSizeBodyLarge;
+    margin-top: $space2XLarge;
+}
+
