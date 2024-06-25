@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Your Page</title>
+    <!-- Add your CSS links here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- Add JAVASCRIPT includes here -->
+    <!-- Main template components -->
+
+    <!-- Content components -->
+
+    <script type="text/JAVASCRIPT" src="../includes/tc-card/tc-card-head.js"></script>
+    <script type="text/JAVASCRIPT" src="../includes/tc-card/tc-card-body.js"></script>
+    <script type="text/JAVASCRIPT" src="./state-current/state-current-death-tpd.js"></script>
+    <script type="text/JAVASCRIPT" src="./cover-items.js"></script>
+
+
+    <!-- Component data/resources -->
+    <script src="/aus-manage-01/includes/tc-current-cover/cover-data/cover-scenario-01.js"></script>
+</head>
+
+<body>
+    <!-- ADD A FLEX WRAPPER TO HELP EXTEND THE FOOTER TO THE BOTTOM OF THE PAGE REGARDLESS OF CONTENT HEIGHT -->
+    <div id="page-container" class="page-container">
+
+
+
+
+        <div class="body-container elevation-medium">
+            <div id="cover-details"></div>
+            <!-- ***** START CONTENT ***** -->
+
+            <!-- ---------------------------------------------------------- -->
+            <!-- cover card -->
+            <div id="cover-card-01" class="tc-card">
+                <div id="card-01-header"></div>
+                <div id="card-01-body" class="card-body">
+                    
+                    <p class="large">If you wish to keep your existing cover, you don't need to do anything.</p>
+                    
+                    <div class="space v-medium"><!-- SPACER! --></div>
+                    
+                    <div class="row">
+                        <span class="label"><img src="../images/icons/indent-arrow.svg" class="sub-icon" /><a onclick='dictionary("text");'>Fixed Cover</a></span> <span class="cover-value">$260,000</span>
+                    </div>
+                    <div class="row">
+                        <span class="label"><img src="../images/icons/indent-arrow.svg" class="sub-icon" /><a onclick='dictionary("text");'>Fixed Cover</a></span> <span class="cover-value">$260,000</span>
+                    </div>
+                      
+                      <div class="space v-medium"><!-- SPACER! --></div>
+                    <!-- -------------------------------------- -->
+                    <!-- Inner DEATH & TPD id group -->
+                    <div id="death-tpd-group">
+                        <!-- -------------------------------------- -->
+                        <!-- Inner CUSTOM DEATH -->
+                        <div id="custom-death-current" class="tc-card bglight">
+                            <div id="custom-death-current-header"></div>
+                            <div id="custom-death-current-body" class="card-body">
+                                <h3>Add card content here:</h3>
+
+                                <!-- *** CURRENT COVER *** -->
+                                <div id="insuranceContainer">
+                                    <!-- DO NOT REMOVE -->
+                                </div>
+
+                                <!-- /// CUSTOM DEATH body end /// -->
+                            </div>
+                        </div>
+
+                        <div class="space v-medium"><!-- SPACER! --></div>
+
+                        <!-- -------------------------------------- -->
+                        <!-- Inner CUSTOM TPD -->
+
+                        <div id="custom-tpd-current" class="tc-card bglight">
+                            <div id="custom-tpd-current-header"></div>
+                            <div id="custom-tpd-current-body" class="card-body">
+                                <h3>Add card content here:</h3>
+
+                                <!-- *** CURRENT COVER *** -->
+                                <div id="insuranceContainer">
+                                    <!-- DO NOT REMOVE -->
+                                </div>
+
+                                <!-- /// CUSTOM TPD body end /// -->
+                            </div>
+                        </div>
+
+                        <!-- /// END DEATH & TPD id group /// -->
+                    </div>
+                    <!-- /// card body end /// -->
+                </div>
+            </div>
+                
+            
+
+            <!-- ---------------------------------------------------------- -->
+            <div class="space v-medium"><!-- SPACER! --></div>
+            <!-- START CONTENT (After card) -->
+
+
+
+
+            <!-- ***** END CONTENT ***** -->
+            <div class="space v-medium"><!-- SPACER! --></div>
+            <div id="cover-0"></div>
+            <div id="cover-1"></div>
+            <div id="cover-2"></div>
+            <div id="cover-11"></div>
+        </div>
+
+        <!-- ---------------------------------------------------------- -->
+        <!-- **** BUILD PAGE WITH JAVASCRIPT COMPONENTS **** -->
+        <script>
+
+            function buildDeathList(){
+                for (let i = 0; i < 3; i++) {
+                // createCoverItem("cover-10");
+                document.getElementById("cover-"+i).innerHTML = createCoverItem();
+            }
+            
+            }
+            // for (let i = 0; i < 3; i++) {
+            //     // createCoverItem("cover-10");
+            //     document.getElementById("cover-"+i).innerHTML = createCoverItem();
+            // }
+            
+
+            function dictionary(text){
+                window.alert(text);
+            }
+
+            // OUTER DEATH/TPD COVER CARD
+            // card header - Title, sub, onclick js, style, element id, action
+            createCardHeader(
+                "TPD & Death cover",
+                "About Death & TPD cover",
+                "window.alert('Education about how these cover types work')",
+                ""  ,
+                "card-01-header",
+            );
+
+            // INNER DEATH + TPD 
+            // --------------------------------------
+            function createDeathTPDCurrent() {
+                // CUSTOM DEATH CARD
+                // card header - Title, sub, onclick js, style, element id, action
+                createCustomCardHeader(
+                    "Death cover",
+                    "Learn more about your cover types",
+                    "window.alert('Education about how these cover types work')",
+                    "bglight",
+                    "custom-death-current-header",
+                    "<button class='secondary btn-action danger' onclick='cancelDeathCover()'>Cancel</button>"
+                );
+
+                // REPLACE WITH CANCEL MESSAGE FUNCTION
+                // document.getElementById("custom-death-current-body").innerHTML = "Your current cover is....";
+                // createCustomDeathTpdCurrent("custom-death-current-body", );
+                createStateCurrentDeathTPD("custom-death-current-body","custom-tpd-current-body");
+                // CUSTOM TPD CARD
+                // card header - Title, sub, onclick js, style, element id, action
+                createCustomCardHeader(
+                    "TPD cover",
+                    "Learn more about your cover types",
+                    "window.alert('Education about how these cover types work')",
+                    "bglight",
+                    "custom-tpd-current-header",
+                    "<button class='secondary btn-action danger' onclick='cancelTPDCover()'>Cancel</button>"
+                );
+            }
+            
+            createDeathTPDCurrent();
+
+            // --------------------------------------
+
+            // CANCEL DEATH + TPD  XXXX
+            // --------------------------------------
+
+            function cancelDeathCover() {
+                // CANCEL DEATH funciton sets specific car header and content for tpd
+
+                // card header - Title, sub, onclick js, style, element id, action
+                createCustomCardHeader(
+                    "Death cover - cancelled",
+                    "Learn more about your cover types",
+                    "window.alert('Education about how these cover types work')",
+                    "bglight",
+                    "custom-death-current-header",
+                    "<button class='secondary btn-action' onclick='createDeathTPDCurrent()'>Reset</button>"
+                );
+
+                // REPLACE WITH CANCEL MESSAGE FUNCTION
+                document.getElementById("custom-death-current-body").innerHTML = "Your cover has been cancelled.";
+            }
+
+            function cancelTPDCover() {
+                // CANCEL TPD funciton sets specific car header and content for tpd
+
+                // card header - Title, sub, onclick js, style, element id, action
+                createCustomCardHeader(
+                    "TPD cover - cancelled",
+                    "Learn more about your cover types",
+                    "window.alert('Education about how these cover types work')",
+                    "bglight",
+                    "custom-tpd-current-header",
+                    "<button class='secondary btn-action' onclick='createDeathTPDCurrent()'>Reset</button>"
+                );
+
+                // REPLACE WITH CANCEL MESSAGE FUNCTION
+                document.getElementById("custom-tpd-current-body").innerHTML = "Your cover has been cancelled.";
+
+            }
+
+            function coverCancelMessage() {
+                let str = "<div>";
+                str += "WARNING!<br>";
+                str += "You have cancelled your cover!";
+                str += "</div>";
+            }
+
+            
+
+        </script>
+
+
+</body>
+
+</html>
