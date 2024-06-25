@@ -1,0 +1,148 @@
+@import "global";
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%; /* Ensure it covers the full width */
+    // background-color: $themeColorBackgroundLight;
+}
+// body{
+//     background-color: $themeColorBackgroundLight;
+//     // min-height: 100vh;
+// }
+
+.bglight{
+    background-color: $themeColorBackgroundLight;
+    color: $themeColorTextDark;
+}
+
+.body-container{
+    flex-grow: 1;
+    max-width: 834px; /* Your specified max-width */
+    width: 100%; /* Take up as much width as possible up to max-width */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    margin: $spaceXLarge auto;
+    /* Other styles... */
+    background-color: $themeColorBackgroundDefault;
+    padding: $spaceLarge;
+    border-radius: $borderRadiusBaseX2;
+}
+
+hr{
+    margin-top: $sizeBaseX10;
+    border: $borderSizeSm solid $themeColorBorderDefault;
+}
+
+
+.elevation-small{
+    box-shadow: $elevationSmall;
+}
+
+.elevation-medium{
+    box-shadow: $elevationMedium;
+}
+
+.elevation-large{
+    box-shadow: $elevationLarge;
+}
+
+.space{
+    padding: 0;
+    margin: 0;
+}
+
+// To be used in conjuction with the .space reset
+.v-2xsmall{
+    height: $space2XSmall;
+}
+
+.v-xsmall{
+    height: $spaceXSmall;
+}
+
+.v-small{
+    height: $spaceSmall;
+}
+
+.v-none{
+    height: $spaceNone;
+
+}
+
+.v-medium{
+    height: $spaceMedium;
+}
+
+.v-large{
+    height: $spaceLarge;
+}
+
+.v-xlarge{
+    height: $spaceXLarge;
+}
+
+.v-2xlarge{
+    height: $space2XLarge;
+}
+
+.v-3xlarge{
+    height: $space3XLarge;
+}
+
+.v-4xlarge{
+    height: $space4XLarge;
+}
+
+
+.make-flex{
+    display: flex;
+    // border: 1px solid greenyellow;
+}
+
+.make-flex.column{
+    flex-direction: column;
+}
+
+.make-flex.row{
+    flex-direction: row;
+}
+
+.make-flex.stretch{
+    align-items: stretch;
+}
+
+
+
+.flex-center{
+    display: flex;
+    justify-content:center;
+    // border: 1px solid greenyellow;
+  }
+
+  .stretch{
+    align-items: stretch;
+}
+
+
+@media only screen and (max-width: 600px)  {
+    .body-container{
+        flex-grow: 1;
+        max-width: 834px; /* Your specified max-width */
+        width: 100%; /* Take up as much width as possible up to max-width */
+        box-sizing: border-box; /* Include padding in the width calculation */
+        margin: auto;
+        /* Other styles... */
+        background-color: $themeColorBackgroundDefault;
+        padding: $spaceXLarge $spaceMedium;
+        border-radius: 0;
+    }
+}
