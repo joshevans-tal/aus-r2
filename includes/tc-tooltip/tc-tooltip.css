@@ -1,0 +1,46 @@
+.tooltiptest {
+  background-color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  position: absolute;
+  max-width: 260px;
+  box-shadow: 1px 2px 8px 2px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+#close-tooltip {
+  /* background-color: #ddd; */
+  /* border: 1px solid black; */
+  height: 28px;
+  width: 28px;
+  /* padding: 4px; */
+  /* color: #fff; */
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-bottom-left-radius: 8px;
+  margin-left: 8px;
+  margin-right: -18px;
+  margin-top: -12px;
+  float: right;
+  box-shadow: inset rgba(0, 0, 0, 0.3) 4px -4px 8px -4px;
+}
+
+@media only screen and (max-width: 600px) {
+  .tooltiptest {
+    background-color: #fff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    position: absolute;
+    max-width: 260px;
+    width: 260px;
+    box-shadow: 1px 2px 8px 2px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    margin-left: 0;
+    left: -100%;
+  }
+}/*# sourceMappingURL=tc-tooltip.css.map */

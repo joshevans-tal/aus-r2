@@ -1,0 +1,45 @@
+@import "../../styles/global";
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    margin-left:5px;
+    background-color: $themeColorInteractive1;
+    padding: 4px;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    /* overflow: hidden; */
+    border-radius: 50%;
+    color: #fff;
+    cursor: default;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 220px;
+    background-color: $themeColorBackgroundInverse;
+    color: #fff;
+    text-align: center;
+    font-size:smaller;  
+    font-weight: normal;
+    border-radius: 6px;
+    padding: 8px 12px;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -115px;
+    margin-bottom: 8px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    /* border: 1px dotted rgb(255, 0, 0); */
+  }
+
+  @media only screen and (max-width: 600px) {
+    
+  }

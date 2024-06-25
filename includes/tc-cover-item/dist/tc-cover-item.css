@@ -1,0 +1,26 @@
+.cover-item-total {
+  background-color: rgba(212, 204, 218, 0.5);
+  margin-bottom: -1px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.cover-item-sub-total {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: -1px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.cover-item .dictionary {
+  border-color: #585858;
+}
+
+.cover-item:first-child {
+  border-radius: calc($sizeBaseUnit * 2) calc($sizeBaseUnit * 2) 0 0;
+}
+
+.cover-item:last-child {
+  border-radius: 0 0 calc($sizeBaseUnit * 2) calc($sizeBaseUnit * 2);
+  border-bottom: none;
+}

@@ -1,0 +1,154 @@
+@import '../../styles/brand';
+@import '../../styles/global';
+
+
+
+/* Slider container styles */
+.slider-outer{
+    // position: absolute;
+  left: $spaceMedium;
+  width: calc(100% - $spaceMedium);
+//   padding: $spaceMedium;\
+// border: 1px solid salmon;
+}
+
+.slider-container {
+    position: relative;
+    width: auto;
+    margin: 20px;
+    margin-top: 40px;
+    padding-bottom:$spaceLarge ;
+    // padding: $spaceLarge;
+    // border: 1px solid #00ccff;
+}
+
+/* Slider styles */
+.slider {
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+/*    margin: 20px 0;*/
+}
+
+
+/* Tooltip styles */
+.slider-tooltip {
+    position: absolute;
+    background-color: $themeColorBackgroundInverse;
+    color: $themeColorTextInverse;
+    padding: $sizeBase $sizeBaseX2;
+    border-radius: 4px;
+    transform: translateX(-50%); /* Only shift horizontally */
+    bottom: 52px; /* Adjust this value to control vertical gap */
+    margin-right: 20px;
+    font-size: 14px;
+    // margin-bottom: 20px;
+    min-width: 20px;
+}
+
+.unit-marks, option{
+    border: 2px solid $themeColorAccent;
+}
+
+.min-label {
+    float: left;
+}
+
+.max-label {
+    float: right;
+}
+
+.slider-text-input-container{
+    clear: both;
+    // width: auto;
+    margin: 20px;
+    // margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: $spaceMedium;
+    // padding: 0 $spaceLarge;
+}
+
+.slider-text-label{
+    float: right;
+    padding: 12px 0;
+    // font-family: $fontFamilySans !important;
+}
+
+.slider-text-input{
+    width: 100px !important;
+    border-radius: 0 $sizeBase $sizeBase 0;
+    // color: aquamarine;
+}
+
+.slider-text-before{
+    padding: 12px;
+    border: 1px solid $themeColorBorderDefault;
+    border-radius: $sizeBase 0 0 $sizeBase;
+}
+  
+
+input[type='range']{ 
+    accent-color: $themeColorInteractive1; 
+}
+
+.slider:active{
+    
+}
+
+
+// input[type="range"]::-webkit-slider-runnable-track { background: #25f822;}
+// SLIDER CUSTOM STYLES
+
+
+// .range-input {
+//     -webkit-appearance: none;
+//     appearance: none; 
+//     width: 100%;
+//     cursor: pointer;
+//     outline: none;
+//     border-radius: 15px;
+//     height: 6px;
+//     background: #ccc;
+//   }
+  
+//   .range-input::-webkit-slider-thumb {
+//     -webkit-appearance: none;
+//     appearance: none; 
+//     height: 15px;
+//     width: 15px;
+//     background-color: #f50;
+//     border-radius: 50%;
+//     border: none;
+//     transition: .2s ease-in-out;
+//   }
+  
+//   .range-input::-moz-range-thumb {
+//     height: 15px;
+//     width: 15px;
+//     background-color: #f50;
+//     border-radius: 50%;
+//     border: none;
+//     transition: .2s ease-in-out;
+//   }
+  
+//   .range-input::-webkit-slider-thumb:hover {
+//     box-shadow: 0 0 0 10px rgba(255,85,0, .1)
+//   }
+//   .range-input:active::-webkit-slider-thumb {
+//     box-shadow: 0 0 0 13px rgba(255,85,0, .2)
+//   }
+//   .range-input:focus::-webkit-slider-thumb {
+//     box-shadow: 0 0 0 13px rgba(255,85,0, .2)
+//   }
+  
+//   .range-input::-moz-range-thumb:hover {
+//     box-shadow: 0 0 0 10px rgba(255,85,0, .1)
+//   }
+//   .range-input:active::-moz-range-thumb {
+//     box-shadow: 0 0 0 13px rgba(255,85,0, .2)
+//   }
+//   .range-input:focus::-moz-range-thumb {
+//     box-shadow: 0 0 0 13px rgba(255,85,0, .2)    
+//   }

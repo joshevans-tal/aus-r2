@@ -1,0 +1,33 @@
+@import '../../styles/brand';
+@import '../../styles/global';
+
+.cover-item-total{
+    background-color: rgba($color: $themeColorBackgroundAccentLight, $alpha: .5);
+    margin-bottom: -1px;
+    padding-top: $spaceLarge;
+    padding-bottom: $spaceLarge;
+}
+
+.cover-item-sub-total{
+    background-color: rgba($color: $themeColorBackgroundDefault, $alpha: .5);
+    margin-bottom: -1px;
+    padding-top: $spaceLarge;
+    padding-bottom: $spaceLarge;
+}
+
+.cover-item{
+    
+}
+
+.cover-item .dictionary{
+    border-color: $themeColorTextLight;
+}
+
+.cover-item:first-child{
+    border-radius: $sizeBaseX2 $sizeBaseX2 0 0 ;
+}
+
+.cover-item:last-child{
+    border-radius: 0 0 $sizeBaseX2 $sizeBaseX2 ;
+    border-bottom: none;
+}

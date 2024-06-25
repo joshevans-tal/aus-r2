@@ -1,0 +1,72 @@
+@import "../../styles/global";
+@import "../../styles/brand";
+
+.tc-switch-labelwrap{
+    display: inline-flex;
+    gap: $spaceMedium;
+    align-items: center;
+    padding: 0 $spaceMedium;
+}
+
+// Background size
+.tc-switch {
+    position: relative;
+    display: inline-block;
+    width: $sizeBaseX9;
+    height: $sizeBaseX5;
+}
+  
+  .tc-switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .tc-switch-background {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $themeColorStateDisabled;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  
+  // handle size - keep square
+  .tc-switch-background:before {
+    position: absolute;
+    content: "";
+    width: $sizeBaseX4;
+    height: $sizeBaseX4;
+    left: 2px;
+    bottom: 2px;
+    background-color: $brandColorWhite;
+    -webkit-transition: .2s;
+    transition: .2s;
+    transition-timing-function: ease-in-out;
+  }
+  
+  input:checked + .tc-switch-background {
+    background-color: $themeColorInteractive1;
+  }
+  
+  input:focus + .tc-switch-background {
+    box-shadow: 0 0 1px $themeColorInteractive1;
+  }
+  
+  input:checked + .tc-switch-background:before {
+    -webkit-transform: translateX($sizeBaseX4);
+    -ms-transform: translateX($sizeBaseX4);
+    transform: translateX($sizeBaseX4);
+  }
+  
+  /* Rounded tc-switch-backgrounds */
+  .tc-switch-background.round {
+    border-radius: 34px;
+  }
+  
+  .tc-switch-background.round:before {
+    border-radius: 50%;
+  }

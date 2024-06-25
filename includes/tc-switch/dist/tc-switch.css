@@ -1,0 +1,67 @@
+.tc-switch-labelwrap {
+  display: inline-flex;
+  gap: calc($sizeBaseUnit * 4);
+  align-items: center;
+  padding: 0 calc($sizeBaseUnit * 4);
+}
+
+.tc-switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+}
+
+.tc-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.tc-switch-background {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #d5d5d5;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.tc-switch-background:before {
+  position: absolute;
+  content: "";
+  width: calc($sizeBaseUnit * 4);
+  height: calc($sizeBaseUnit * 4);
+  left: 2px;
+  bottom: 2px;
+  background-color: #ffffff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+input:checked + .tc-switch-background {
+  background-color: #260046;
+}
+
+input:focus + .tc-switch-background {
+  box-shadow: 0 0 1px #260046;
+}
+
+input:checked + .tc-switch-background:before {
+  -webkit-transform: translateX(calc($sizeBaseUnit * 4));
+  -ms-transform: translateX(calc($sizeBaseUnit * 4));
+  transform: translateX(calc($sizeBaseUnit * 4));
+}
+
+/* Rounded tc-switch-backgrounds */
+.tc-switch-background.round {
+  border-radius: 34px;
+}
+
+.tc-switch-background.round:before {
+  border-radius: 50%;
+}

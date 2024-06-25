@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="../../styles/main.css">
+    <script src="./tc-switch.js" type="text/JAVASCRIPT"></script>
+</head>
+
+<body>
+
+    <h2>Toggle tc-switch</h2>
+
+    <div id="switch-test"></div>
+    <script> 
+    let container = document.getElementById('switch-test');
+    /* SWITCH FNC 
+        - tcSwitch(id,labelLeft, labelRight, round)
+        - tcSwtch(string, string, string, bool) - if false, style is square 
+    */
+    container.innerHTML = tcSwitch('switch1','left label', 'right label');
+    container.innerHTML += `<br>`+tcSwitch('switch2','left label 2', 'right label 2');
+
+    let switch1 = document.getElementById('switch1');
+    let switch2 = document.getElementById('switch2');
+    
+    switch1.addEventListener('change', function() {
+        if (this.checked) {
+            console.log("Checkbox is checked..");
+        } else {
+            console.log("Checkbox is not checked..");
+        }
+    });
+
+    switch2.addEventListener('change', function() {
+        if (this.checked) {
+            console.log("Checkbox is checked..");
+        } else {
+            console.log("Checkbox is not checked..");
+        }
+    });
+    </script>
+</body>
+
+</html>
