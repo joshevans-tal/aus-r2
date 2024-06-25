@@ -1,0 +1,188 @@
+@import "../../styles/global";
+
+.form-element{
+    margin: $sizeBaseX10 0 0 0;
+    // color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    // gap: $sizeBaseX2;
+    color: $themeColorTextDark;
+    // border: 1px solid coral;
+
+    .caption{
+        margin-top: 0px;
+    }
+}
+
+.form-element:first-of-type{
+    margin-top: 0;
+}
+
+
+.value{
+    margin: 0;
+    color: $themeColorTextDefault;
+    font-size: $fontSizeBodyLarge;
+    width: 100%;
+    // border: 1px solid coral;
+    display: flex;
+    gap: $sizeBaseX2;
+}
+
+// .radio-btn{
+//     display: flex;
+//     align-items:center;
+//     gap: $sizeBaseX4;
+//     border: $borderSizeSm solid $themeColorBorderDefault;
+//     border-radius: $borderRadiusBase;
+//     vertical-align: middle;
+//     height: $sizeBaseX6;
+//     padding: $sizeBaseX2 $sizeBaseX6;
+// }
+
+.radio-group{
+    margin-top: 20px;
+    display: flex;
+    gap: 0 0;
+}
+
+.radio-item{
+    font-size: 12pt;
+    padding: $sizeBaseX3 $sizeBaseX5;
+    border: 1px solid $themeColorBorderDefault;
+    border-radius: 8px;
+
+    input{margin: 0;}
+}
+
+.radio-item:hover{
+        background-color: $themeColorInteractive1Hover;
+        color: $themeColorTextInverse;
+}
+
+.radio-container{
+    display: flex;
+    gap: $spaceSmall;
+
+}
+
+.radio-item:active{
+    background-color: $themeColorInteractive1;
+    color: #fff;
+}
+
+.radio-item input:checked{
+    background-color: $themeColorInteractive1;
+    color: #fff;
+}
+
+label{
+    font-size: $fontSizeBase;
+    display: inline-flex;
+    gap: $spaceSmall;
+    align-items: center;
+
+    svg {
+        fill: $themeColorIconDefault;
+        path{
+            fill: $themeColorIconDefault;
+        }
+    }
+
+    svg:hover {
+        cursor: pointer;
+        fill: $themeColorInteractive1Hover;
+        path{
+            fill: $themeColorInteractive1Hover;
+        }
+    }
+
+    .icon-bg{
+        background-color: $themeColorBackgroundDefault;
+        border-radius: 100px;
+    }
+}
+
+
+
+// label{
+//     font-size: $fontSizeBase;
+//     display: inline-flex;
+//     gap: $spaceSmall;
+//     align-items: center;
+//     cursor: pointer;
+    
+// }
+
+.label-icon {
+    font-size: $fontSizeBase;
+    display: inline-flex;
+    gap: $spaceSmall;
+    align-items: flex-start;
+
+    svg {
+        fill: $themeColorIconDefault;
+    }
+}
+
+
+input{
+    font-family: $fontFamilyCondensed;
+    color: $themeColorTextDefault;
+    font-size: $fontSizeBodyDefault;
+    background-color: $themeColorBackgroundDefault;
+    padding: $sizeBaseX3 $sizeBaseX5;
+    border: $borderSizeSm solid $themeColorBorderDefault;
+    border-radius: $borderRadiusBase;
+    // display: flex;
+}
+
+input:focus{
+    border-color: $borderColorFocus;
+}
+
+  
+select{
+appearance: none;
+-webkit-appearance: none !important;
+-moz-appearance: none !important;
+font-family: $fontFamilyCondensed;
+color: $themeColorTextDefault;
+font-size: $fontSizeBodyDefault;
+background-color: $themeColorBackgroundDefault;
+// height: 45px;
+// width: 100%;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAUCAMAAACtdX32AAAAdVBMVEUAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhMdQaAAAAJ3RSTlMAAAECAwQGBwsOFBwkJTg5RUZ4eYCHkJefpaytrsXGy8zW3+Do8vNn0bsyAAAAYElEQVR42tXROwJDQAAA0Ymw1p9kiT+L5P5HVEi3qJn2lcPjtIuzUIJ/rhIGy762N3XaThqMN1ZPALsZPEzG1x8LrFL77DHBnEMxBewz0fJ6LyFHTPL7xhwzWYrJ9z22AqmQBV757MHfAAAAAElFTkSuQmCC);
+background-position: 100%;
+background-repeat: no-repeat;
+border: $borderSizeSm solid $themeColorBorderDefault;
+border-radius: $borderRadiusBase;
+padding: $sizeBaseX3 $sizeBaseX12 $sizeBaseX3 $sizeBaseX5 ;
+}
+
+.num{
+    color: $themeColorAccent;
+    font-weight: 400;
+    width: 40px;
+    padding-right: 8px;
+}
+
+.currency-container{
+    display: flex;
+    gap: $sizeBaseX4;
+}
+
+.currency-text-input{
+    width: 100% !important;
+    border-radius: 0 $sizeBase $sizeBase 0;
+    // color: aquamarine;
+}
+
+.input-prefix{
+    border: 1px solid $themeColorBorderDefault;
+    border-radius: $sizeBase 0 0 $sizeBase;
+    margin-right: -$spaceMedium;
+    border-right: none;
+    padding: 12px;
+    background-color: $themeColorBackgroundLight;
+}

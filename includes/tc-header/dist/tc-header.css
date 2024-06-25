@@ -1,0 +1,23 @@
+.tc-header {
+  background-color: #260046;
+  min-height: 80px;
+  margin-top: auto;
+  color: #ffffff;
+  padding: 60px 0;
+  width: 100%;
+}
+.tc-header .content {
+  margin: auto;
+  max-width: 834px;
+  padding: calc($sizeBaseUnit * 4);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding-bottom: 24px;
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    padding: calc($sizeBaseUnit * 4) 24px !important;
+  }
+}

@@ -1,0 +1,148 @@
+.form-element {
+  margin: 40px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  color: #2e2e2e;
+}
+.form-element .caption {
+  margin-top: 0px;
+}
+
+.form-element:first-of-type {
+  margin-top: 0;
+}
+
+.value {
+  margin: 0;
+  color: #585858;
+  font-size: 18px;
+  width: 100%;
+  display: flex;
+  gap: 8px;
+}
+
+.radio-group {
+  margin-top: 20px;
+  display: flex;
+  gap: 0 0;
+}
+
+.radio-item {
+  font-size: 12pt;
+  padding: 12px 20px;
+  border: 1px solid #d5d5d5;
+  border-radius: 8px;
+}
+.radio-item input {
+  margin: 0;
+}
+
+.radio-item:hover {
+  background-color: #7d6690;
+  color: #ffffff;
+}
+
+.radio-container {
+  display: flex;
+  gap: 8px;
+}
+
+.radio-item:active {
+  background-color: #260046;
+  color: #fff;
+}
+
+.radio-item input:checked {
+  background-color: #260046;
+  color: #fff;
+}
+
+label {
+  font-size: 16px;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+label svg {
+  fill: #260046;
+}
+label svg path {
+  fill: #260046;
+}
+label svg:hover {
+  cursor: pointer;
+  fill: #7d6690;
+}
+label svg:hover path {
+  fill: #7d6690;
+}
+label .icon-bg {
+  background-color: #ffffff;
+  border-radius: 100px;
+}
+
+.label-icon {
+  font-size: 16px;
+  display: inline-flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+.label-icon svg {
+  fill: #260046;
+}
+
+input {
+  font-family: "Open Sans";
+  color: #585858;
+  font-size: 16px;
+  background-color: #ffffff;
+  padding: 12px 20px;
+  border: 1px solid #d5d5d5;
+  border-radius: 4px;
+}
+
+input:focus {
+  border-color: #0091FF;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  font-family: "Open Sans";
+  color: #585858;
+  font-size: 16px;
+  background-color: #ffffff;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAUCAMAAACtdX32AAAAdVBMVEUAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhMdQaAAAAJ3RSTlMAAAECAwQGBwsOFBwkJTg5RUZ4eYCHkJefpaytrsXGy8zW3+Do8vNn0bsyAAAAYElEQVR42tXROwJDQAAA0Ymw1p9kiT+L5P5HVEi3qJn2lcPjtIuzUIJ/rhIGy762N3XaThqMN1ZPALsZPEzG1x8LrFL77DHBnEMxBewz0fJ6LyFHTPL7xhwzWYrJ9z22AqmQBV757MHfAAAAAElFTkSuQmCC);
+  background-position: 100%;
+  background-repeat: no-repeat;
+  border: 1px solid #d5d5d5;
+  border-radius: 4px;
+  padding: 12px 48px 12px 20px;
+}
+
+.num {
+  color: #7d6690;
+  font-weight: 400;
+  width: 40px;
+  padding-right: 8px;
+}
+
+.currency-container {
+  display: flex;
+  gap: 16px;
+}
+
+.currency-text-input {
+  width: 100% !important;
+  border-radius: 0 4px 4px 0;
+}
+
+.input-prefix {
+  border: 1px solid #d5d5d5;
+  border-radius: 4px 0 0 4px;
+  margin-right: -16px;
+  border-right: none;
+  padding: 12px;
+  background-color: #eaeaea;
+}/*# sourceMappingURL=tc-forms.css.map */

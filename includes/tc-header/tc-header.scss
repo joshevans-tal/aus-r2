@@ -1,0 +1,26 @@
+@import "../../styles/global";
+
+.tc-header{
+    background-color: $themeColorBackgroundInverse;
+    min-height: $sizeBaseX20;
+    margin-top: auto;
+    color: $themeColorTextInverse;
+    padding: $sizeBaseX15 0;
+    width: 100%;
+
+    .content{
+        margin: auto;
+        max-width: 834px;
+        padding: $sizeBaseX4;
+        display: flex;
+        flex-direction: column;
+        gap: $spaceNone;
+        padding-bottom: $sizeBaseX6;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content{
+        padding: $sizeBaseX4 $spaceLarge !important;
+    }
+}

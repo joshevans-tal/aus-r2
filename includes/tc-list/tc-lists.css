@@ -1,0 +1,16 @@
+div.list div {
+  counter-increment: list-number;
+}
+
+div.list div:before {
+  content: counter(list-number) ". ";
+  color: #7d6690;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  margin-right: 16px;
+}
+
+div.list div {
+  margin-top: 8px;
+}/*# sourceMappingURL=tc-lists.css.map */

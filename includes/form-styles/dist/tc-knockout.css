@@ -1,0 +1,17 @@
+.knockout-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.knockout-sub {
+  top: -32px;
+  padding: 12px;
+  margin-left: -12px;
+  margin-right: -12px;
+  background-color: rgba(172, 210, 223, 0);
+  /* background-image: linear-gradient(#efefef, white, white); */
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
