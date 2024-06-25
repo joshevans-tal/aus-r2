@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<script src="../../data/manage-copy-01.js"></script>
+	
+</head>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import "../../styles/main";
+:root {
+	--vs-primary: 29 92 255;
+
+}
+
+/*Dialog Styles*/
+dialog {
+	/* padding: 1rem 3rem; */
+	background: white;
+	/* max-width: (768-64)px; */
+	/* max-height: 800px; */
+	/* height: 70%; */
+	width: 60%;
+	max-width: 768px;
+	/* padding-top: 2rem; */
+	padding: 0;
+	border-radius: 20px;
+	border: none;
+	box-shadow: 0 5px 30px 0 rgb(0 0 0 / 20%);
+	animation: fadeIn 1s ease both;
+	&::backdrop {
+		animation: fadeIn 1s ease both;
+		background: rgba(0, 0, 0, 0.4);
+		z-index: 2;
+		backdrop-filter: blur(20px);
+	}
+	.x {
+		filter: grayscale(1);
+		border: none;
+		background: none;
+		position: absolute;
+		font-size: 24px;
+		top: 15px;
+		right: 10px;
+		transition: ease filter, transform 0.3s;
+		cursor: pointer;
+		transform-origin: center;
+		&:hover {
+			filter: grayscale(.5);
+			transform: scale(1.1);
+		}
+	}
+	h2 {
+		font-weight: 600;
+		font-size: 2rem;
+		padding-bottom: 1rem;
+	}
+	p {
+		font-size: 1rem;
+		line-height: 1.3rem;
+		padding: 0.5rem 0;
+		a {
+			&:visited {
+				color: rgb(var(--vs-primary));
+			}
+		}
+	}
+}
+
+/*General Styles*/
+
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.modal-container{
+	display: flex;
+	flex-direction: column;
+	max-height: 80vh;
+	overflow: hidden;
+	border-radius: 12px;
+}
+.modal-content{
+	/* position: absolute; */
+	overflow: scroll;
+	padding: 16px;
+}
+
+.modal-header{
+	background-color: #fff;
+	padding: 0 16px;
+	display: flex;
+	gap: 12px;
+	justify-content: space-between;
+	border-bottom: 1px solid #ccc;
+}
+
+.modal-title{
+
+
+}
+
+.modal-footer{
+	/* position: fixed; */
+	background-color: #fff;
+	border-top: 1px solid #ccc;
+	padding: 0 16px;
+	display: flex;
+	gap: 12px;
+	justify-content: flex-end;
+	align-items: center;
+}
+</style>
+<body>
+<button class="primary" onclick="window.dialog.showModal();">Open Dialog</button>
+
+<dialog id="dialog" >
+	<div class="modal-container">
+		<div class="modal-header">
+			<span class="modal-title"><p>This is a Title</p></span>
+			<button onclick="window.dialog.close();" aria-label="close" class="x">✕</button>
+		</div>
+		
+		<div id="modal-content" class="modal-content">
+			<div id="incl-header-01.html"></div>
+			<h2>Hello.</h2>
+			<p>A CSS-only modal based on the <a href="https://developer.mozilla.org/es/docs/Web/CSS/::backdrop" target="_blank">::backdrop</a> pseudo-class. Hope you find it helpful.</p>
+			<p>You can also change the styles of the <code>::backdrop</code> from the CSS.</p>
+			<p><img src="https://www.eatforhealth.gov.au/sites/default/files/2022-09/n55_agthe_large.jpg" width="100%"/></p>
+		</div>
+
+		<div class="modal-footer" >
+			<p>This is a footer</p>
+			<button onclick="window.dialog.close();" aria-label="close">Cancel</button>
+			<button onclick='window.location.href = "google.com";' aria-label="url">Accept & continue</button>
+			
+		</div>
+	</div>
+</dialog>
+<script>
+
+		document.getElementsById('modal-content').innerHTML = "dorc content";
+
+	
+</script>
+</body>
+</html>

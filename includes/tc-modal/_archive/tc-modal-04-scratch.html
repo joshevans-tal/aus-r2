@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<!-- Add your CSS links here -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="../../styles/main.css">
+	<!-- Add javascript here -->
+	<script src="../../data/manage-copy-01.js"></script>
+	
+</head>
+
+<body>
+<button class="primary" onclick="window.dialog.showModal();">Open Dialog</button>
+
+<dialog id="dialog" >
+	<div class="modal-container">
+		<div class="modal-header">
+			<span class="modal-title"><h2>Duty of reasonable care</h2></span>
+			<button onclick="window.dialog.close();" aria-label="close" class="x">✕</button>
+		</div>
+		
+		<div id="modal-content" class="modal-content"></div>
+
+		<div class="modal-footer" >
+			<p>This is a footer</p>
+			<button class="secondary"onclick="window.dialog.close();" aria-label="close">Cancel</button>
+			<button class="primary" onclick='window.location.href = "google.com";' aria-label="url">Accept & continue</button>
+			
+		</div>
+	</div>
+</dialog>
+<script>
+
+document.getElementById('modal-content').innerHTML = dorc;
+
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+.tc-inline-alert {
+  margin-top: 16px;
+  border-radius: 8px;
+  padding: 16px;
+  border: none;
+}
+
+.tc-inline-alert::first-line {
+  content: url("../../../images/icons/ic-info-circle.svg");
+}
+
+.tc-inline-alert.make-flex {
+  gap: 8px;
+}
+
+.tc-inline-alert.low-contrast {
+  background-color: rgba(212, 204, 218, 0.5);
+}
+
+.tc-inline-alert.info {
+  background-color: #d4ccda;
+}
+
+.tc-inline-alert.warning-icon {
+  background-color: #FDDEC4;
+}
+
+.tc-inline-alert.danger-icon {
+  background-color: #F2DEDE;
+}/*# sourceMappingURL=tc-inline-alert.css.map */

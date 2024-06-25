@@ -1,0 +1,24 @@
+@import "../../styles/global";
+
+.navbar{
+    margin: 0;
+    background-color: $themeColorBackgroundAccentLight;
+    display: flex;
+    padding: $spaceMedium;
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+.logo{
+    font-size: 1.4rem;
+    color: $brandColorPrimary2;
+}
+
+.logo span:first-of-type {
+    font-weight: 900;
+    color: $brandColorPrimary1;
+    text-transform: uppercase;
+    font-style: italic;
+}

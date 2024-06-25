@@ -1,0 +1,213 @@
+.navbar {
+  margin: 0;
+  background-color: #ffffff;
+  display: flex;
+  padding: 8px;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 1.4rem;
+}
+
+.logo span:first-of-type {
+  font-weight: 900;
+  color: #260046;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.num {
+  color: #7d6690;
+  font-weight: 400;
+  width: 40px;
+  padding-right: 8px;
+}
+
+.sub {
+  top: -32px;
+  padding: 12px;
+  margin-left: -12px;
+  margin-right: -12px;
+  background-color: rgba(172, 210, 223, 0);
+  /* background-image: linear-gradient(#efefef, white, white); */
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.my-label {
+  padding-bottom: 4px;
+}
+
+.question-list {
+  /* position: relative; */
+  margin-top: 0;
+  margin-left: -1rem;
+  /* border: 1px solid palevioletred; */
+}
+
+.form-element {
+  display: flex;
+  gap: 12px;
+  text-align: left;
+}
+
+.knockout-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.buttonbar {
+  display: flex;
+  gap: calc($sizeBaseUnit * 4);
+}
+
+.salary-div {
+  height: 100%;
+}
+
+select:focus {
+  box-shadow: #015BD7 0 0 6px;
+}
+
+input:focus {
+  box-shadow: #015BD7 0 0 6px;
+}
+
+.caption {
+  margin-top: 8px;
+  font-size: smaller;
+  line-height: 1.1rem;
+  color: #666666;
+}
+
+.value {
+  /* border: 1px solid #ff5ec4; */
+  margin-top: 4px;
+}
+
+.suffix {
+  margin-left: -1px;
+  color: #666666;
+  background-color: #eeeeee;
+  border-radius: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-size: 12pt;
+  /* line-height: 22pt; */
+  padding: 8px;
+  border: 1px solid #fff;
+  outline: solid 1px #cccccc;
+  outline-offset: -1px;
+  display: inline-block;
+}
+
+#frequency {
+  margin-left: -6px;
+}
+
+#hours-worked {
+  width: 70px;
+  text-align: center;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#salary {
+  /* width: 100%;  */
+  width: 40%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#salary-container {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-start; */
+  /* align-items:flex-start; */
+  flex-basis: auto;
+  flex-flow: row wrap;
+}
+
+.salary-div {
+  height: 60px;
+  min-width: 160px;
+  /* flex-grow: 2; */
+  /* padding-right: 40px; */
+  /* border: 1px solid #666666; */
+}
+
+.bump-down {
+  line-height: 24px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.w50 {
+  width: 50%;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  color: #dedede;
+  /* old IE */
+  background-color: #dedede;
+  /* Modern Browsers */
+  margin: 40px 0 20px 0;
+  /* width: 60%; */
+}
+
+.margin-btm-x2 {
+  margin-bottom: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden .hidden-margin-top {
+  /* Fix margin top issue on question 5b where the list butts up agains the label */
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 788px) {
+  .container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container {
+    margin-left: 12px;
+    margin-right: 12px;
+    /* width: 100%; */
+  }
+
+  .intro {
+    max-width: 768px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .container {
+    margin-left: 8px;
+    margin-right: 8px;
+    /* width: 100%; */
+  }
+
+  .intro {
+    max-width: 768px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}

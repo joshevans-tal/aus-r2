@@ -1,0 +1,22 @@
+.navbar {
+  margin: 0;
+  background-color: #d4ccda;
+  display: flex;
+  padding: 16px;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 1.4rem;
+  color: #d93e02;
+}
+
+.logo span:first-of-type {
+  font-weight: 900;
+  color: #260046;
+  text-transform: uppercase;
+  font-style: italic;
+}/*# sourceMappingURL=navbar-01.css.map */

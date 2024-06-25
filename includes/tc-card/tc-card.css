@@ -1,0 +1,75 @@
+.tc-card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.tc-card .card-header {
+  background-color: #260046;
+  color: #ffffff;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.tc-card .card-body {
+  background-color: #ffffff;
+  color: #585858;
+  border: 1px solid #d5d5d5;
+  border-top: none;
+  border-bottom: none;
+  overflow: hidden;
+  padding: 16px;
+}
+.tc-card .card-footer {
+  background-color: #ffffff;
+  color: #585858;
+  border-radius: 0 0 8px 8px;
+  border: 1px solid #d5d5d5;
+  overflow: hidden;
+  padding: 16px;
+}
+.tc-card .bglight {
+  background-color: #eaeaea;
+  color: #585858;
+}
+.tc-card .footerNull {
+  padding: 4px;
+  border-top: none;
+}
+
+.card-head-flex-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -4px;
+}
+
+.card-header, .bglight {
+  background-color: #eaeaea;
+  color: #585858;
+}
+
+.btn-action {
+  height: 32px;
+  padding: 0 12px;
+  line-height: 112.5%;
+  font-size: 14px;
+}
+
+.card-sub {
+  padding-top: 16px;
+}
+
+.info-text-hidden {
+  padding-bottom: 8px;
+}
+
+.footer-premium {
+  display: flex;
+  justify-content: end;
+}
+.footer-premium div {
+  display: inline-flex;
+  gap: 8px;
+}/*# sourceMappingURL=tc-card.css.map */

@@ -1,0 +1,34 @@
+@import '../../styles/brand';
+@import '../../styles/global';
+
+.tc-inline-alert{
+    margin-top: $spaceMedium;
+    border-radius: $sizeBaseX2;
+    padding: $spaceMedium;
+    border: none;
+}
+
+.tc-inline-alert::first-line{
+    content: url('../../../images/icons/ic-info-circle.svg');
+}
+
+.tc-inline-alert.make-flex{
+    gap: $spaceSmall;
+    // flex-direction:column;
+}
+
+.tc-inline-alert.low-contrast{
+    background-color: rgba($color: $themeColorBackgroundAccentLight, $alpha: .5);
+}
+
+.tc-inline-alert.info{
+        background-color: $themeColorBackgroundAccentLight;
+    }
+
+.tc-inline-alert.warning-icon{
+        background-color: $themeColorBackgroundWarningLight;
+    }
+
+.tc-inline-alert.danger-icon{
+        background-color: $themeColorBackgroundDangerLight;
+    }

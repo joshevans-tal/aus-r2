@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Add your CSS links here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/main.css">
+
+
+    <!-- ####  Add you JAVASCRIPT includes #### -->
+
+    <!-- INCLUDE :: DATA -->
+    <script src="../../data/scenario-config-01.js"></script>
+    <!-- INCLUDE :: COMPONENTS -->
+    <script type="text/JAVASCRIPT" src="../../includes/tc-navbar/tc-navbar-01.js"></script>
+    <script type="text/JAVASCRIPT" src="../../includes/tc-header/tc-header.js"></script>
+    <script type="text/JAVASCRIPT" src="../../includes/tc-footer/tc-footer.js"></script>
+    <script type="text/JAVASCRIPT" src="../../includes/tc-card/tc-card.js"></script>
+    <script type="text/JAVASCRIPT" src="tc-ctas.js"></script>
+    <script type="text/JAVASCRIPT" src="../../includes/tc-switch/tc-switch.js"></script>
+    <script type="text/JAVASCRIPT" src="../../includes/tc-cover-item/tc-cover-item.js"></script>
+    <script type="text/JAVASCRIPT" src="../../includes/tc-inline-alert/tc-inline-alert.js"></script>
+    <script type="text/JAVASCRIPT" src="../../js/tc-utilities.js"></script>
+    <script type="text/JAVASCRIPT" src="../../includes/tc-slider-02/tc-data-slider-02.js"></script>
+
+    <!-- INCLUDE :: PAGE FUNCTIONS -->
+
+
+</head>
+
+<body>
+    <!-- 
+        THIS PAGE IS BUILT USING PAGE TEMPLATE SCRIPT 
+        Add elements content using id="content-container"
+    -->
+    <div id="slider-test"></div>
+    <script src="../../includes/tc-page-template/tc-page-template.js"></script>
+    <script>
+        // ----------------------------------
+        // SET UP BASIC PAGE TEMPLATE
+        // ----------------------------------
+        createPage(
+            // string – page header text
+            "Choose your cover",
+            // string - header subhead text
+            "Select the cover types and benefits that best fit your needs. If you wish to keep your existing cover, you don’t need to do anything. ",
+            // string - default or bglight
+            "default",
+            // update browser window title  
+            "Custom title"
+        ); 
+    </script>
+    <script>
+        // -----------------------------------------------------------------------------------------------------------------
+        // CREATE PAGE CONTENT STRUCTURE
+        // -----------------------------------------------------------------------------------------------------------------
+
+        // BODY CONTAINER IS id="content-container"
+        let bodyContainer = document.getElementById("content-container");
+
+        bodyContainer.innerHTML += `Hi you!`;
+
+        let mainContent = `<h3 class="">Adjust your cover in 3 steps</h3>`;
+        mainContent += `<div id="expectation-list"></div>`;
+        mainContent += addSpace('medium');
+        // -------------------------------
+        // CTAS
+        // -------------------------------
+        mainContent += tcCTA(
+            // Set cta layout DEFAULT should be 'fullwidth' - any other value will collaps the buttons
+            'fullwidth',
+            // Define 2D array of buttons
+            [
+                [
+                    'primary',
+                    'large',
+                    'Get started',
+                    `window.location.href = "http://www.w3schools.com";`
+                ],
+                [
+                    'tertiary',
+                    'large',
+                    'Cancel & exit',
+                    `location.href='index.html';`
+                ]
+            ]
+
+        );
+
+        mainContent += addSpace('small');
+        mainContent += `<p>This is some tesxt with a <span class="dictionary" 
+onclick="myTooltip(this,'This is new text')">Fixed</span> inside it</p>
+<a href="google.com">google</a><button onclick="window.location.href = 'http://www.w3schools.com';">Button trial</button>`
+        // -------------------------------
+        //  ADD MAIN CONTENT STRUCTURE - TO HTML PAGE
+        // -------------------------------
+        bodyContainer.innerHTML += mainContent;
+
+    </script>
+
+
+
+
+</body>
+
+</html>

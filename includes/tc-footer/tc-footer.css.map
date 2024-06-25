@@ -1,0 +1,1 @@
+{"version":3,"sources":["tc-footer.scss","../../styles/global.scss","../../styles/brand.scss","tc-footer.css"],"names":[],"mappings":"AAGA;EACI,gBC+MU;ED9MV,yBELiB;EFMjB,cEyGc;EFxGd,kBAAA;EACA,aAAA;EACA,8BAAA;EACA,eCmSgB;AErSpB;;AHMA;EACI,gBCoMU;AEvMd;;AHMA;EACI,cE4Fc;EF3Fd,qBAAA;AGHJ;;AHMA;EACI,cEpBoB;EFqBpB,qBAAA;AGHJ;;AHMA;EACI;IACI,kBAAA;EGHN;AACF","file":"tc-footer.css"}

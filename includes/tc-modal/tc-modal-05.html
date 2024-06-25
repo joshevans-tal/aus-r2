@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<!-- Add your CSS links here -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="../../styles/main.css">
+	<!-- Add javascript here -->
+	<script src="../../data/manage-copy-01.js"></script>
+	<script src="tc-modal.js"></script>
+	<script src="../tc-ctas/tc-ctas.js"></script>
+	
+</head>
+
+<body>
+<button class="primary" onclick="window.dialog.showModal();">Open Var modal</button>
+<button class="primary" onclick="window.dialogdorc.showModal();">Open Dynamic modal</button>
+
+<script>
+
+// document.getElementById('modal-content').innerHTML = dorc;
+
+let modal1Footer = `
+	<button class="secondary"onclick="window.dialog.close();" aria-label="close">Cancel</button>
+	<button class="primary" onclick='window.location.href = "google.com";' aria-label="url">Accept & continue</button>`;
+
+document.body.innerHTML += tcModal('Duty of reasonable care', dorc, modal1Footer,'dialog');
+
+
+
+document.body.innerHTML += tcModal(dorcContent["title"], dorcContent["content"], dorcContent["modal footer"],dorcContent["id"]);
+console.log(dorcContent["content"]);
+	
+</script>
+</body>
+</html>

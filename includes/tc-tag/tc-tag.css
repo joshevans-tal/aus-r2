@@ -1,0 +1,18 @@
+.tc-tag {
+  padding: 8px 16px;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.tc-tag.increased {
+  background-color: #d4ccda;
+}
+
+.tc-tag.no-change {
+  background-color: #eaeaea;
+}
+
+.tc-tag.decreased {
+  background-color: #F2DEDE;
+}/*# sourceMappingURL=tc-tag.css.map */

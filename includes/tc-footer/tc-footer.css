@@ -1,0 +1,29 @@
+.footer {
+  min-height: 40px;
+  background-color: #260046;
+  color: #ffffff;
+  padding: 40px 40px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.footer {
+  margin-top: 40px;
+}
+
+a.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a.footer-link:hover {
+  color: #beb3c8;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 40px 24px;
+  }
+}/*# sourceMappingURL=tc-footer.css.map */

@@ -1,0 +1,53 @@
+#perc-container {
+  margin-top: calc($sizeBaseUnit * 2);
+  margin-bottom: calc($sizeBaseUnit * 4);
+}
+
+#perc-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 200px !important;
+  line-height: 0px;
+  margin-bottom: calc($sizeBaseUnit * 4);
+}
+
+.perc-labels {
+  display: flex;
+  align-content: center;
+  gap: 4px;
+}
+
+.circ {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 0px;
+  margin-bottom: -calc($sizeBaseUnit * 4);
+}
+
+#tc-perc-container {
+  display: flex;
+  min-width: 200px !important;
+  height: calc($sizeBaseUnit * 2);
+  border-radius: calc($sizeBaseUnit * 2);
+  overflow: hidden;
+}
+
+.num1 {
+  background-color: #260046;
+}
+
+.num2 {
+  background-color: #d93e02;
+  color: #d93e02;
+}
+
+.circ.num1 {
+  background-color: rgba(0, 0, 0, 0);
+  color: #260046;
+}
+
+.circ.num2 {
+  background-color: rgba(0, 0, 0, 0);
+  color: #d93e02;
+}

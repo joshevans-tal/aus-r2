@@ -1,0 +1,33 @@
+@import "../../styles/global";
+// @import "brand";
+
+.footer{
+    min-height: $sizeBaseX10;
+    background-color: $themeColorBackgroundInverse;
+    color: $themeColorTextInverse;
+    padding: $space2XLarge $space2XLarge;
+    display: flex;
+    justify-content: space-between;
+    font-size: $fontSizeBodySmall;
+    // width: 100%;
+}
+
+.footer{
+    margin-top: $space2XLarge;
+}
+
+a.footer-link{
+    color: $themeColorTextInverse;
+    text-decoration: none;
+}
+
+a.footer-link:hover{
+    color: $brandColorPrimary1T30;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    .footer{
+        padding: $space2XLarge $spaceLarge;
+    }
+}

@@ -1,0 +1,23 @@
+@import "../../styles/global";
+
+.tc-tag{
+    padding: $spaceSmall $spaceMedium;
+    border-radius: 100px;
+    font-size: $fontSizeBodySmall;
+    font-weight: $fontWeightRegular;
+}
+
+.tc-tag.increased{
+    background-color: $themeColorBackgroundSuccessLight;
+}
+
+.tc-tag.no-change{
+    background-color: $themeColorBackgroundLight;
+}
+.tc-tag.decreased{
+    background-color: $themeColorBackgroundDangerLight;
+}
+
+.tc-tag.small{
+
+}

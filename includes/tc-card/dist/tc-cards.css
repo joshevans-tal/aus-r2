@@ -1,0 +1,182 @@
+.headings {
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+
+.display1 {
+  line-height: 116px;
+  font-size: 96px;
+  letter-spacing: -0.5px;
+}
+.display1 .mobile {
+  font-family: "Open Sans";
+  font-weight: medium;
+  line-height: 60px;
+  font-size: 52px;
+  letter-spacing: -0.5px;
+}
+
+.display2 {
+  line-height: 60px;
+  font-size: 52px;
+  letter-spacing: -0.5px;
+}
+.display2 .mobile {
+  line-height: 52px;
+  font-size: 44px;
+  letter-spacing: -0.5px;
+}
+
+.display3 {
+  line-height: 52px;
+  font-size: 44px;
+  letter-spacing: -0.5px;
+}
+.display3 .mobile {
+  line-height: 44px;
+  font-size: 36px;
+  letter-spacing: -0.5px;
+}
+
+.display4 {
+  line-height: 44px;
+  font-size: 36px;
+  letter-spacing: -0.5px;
+}
+.display4 .mobile {
+  line-height: 40px;
+  font-size: 32px;
+  letter-spacing: -0.5px;
+}
+
+.heading1 {
+  font-family: "Open Sans";
+  font-weight: medium;
+  line-height: 48px;
+  font-size: 40px;
+  letter-spacing: -0.5px;
+}
+
+.heading4 {
+  font-family: "Open Sans";
+  font-weight: medium;
+  line-height: 32px;
+  font-size: 28px;
+  letter-spacing: -0.5px;
+}
+
+.heading2 {
+  line-height: 44px;
+  font-size: 36px;
+  letter-spacing: -0.5px;
+}
+.heading2 .mobile {
+  line-height: 40px;
+  font-size: 32px;
+  letter-spacing: -0.5px;
+}
+
+.heading3 {
+  line-height: 40px;
+  font-size: 32px;
+  letter-spacing: -0.5px;
+}
+.heading3 .mobile {
+  line-height: 32px;
+  font-size: 28px;
+  letter-spacing: -0.5px;
+}
+
+.heading5 {
+  line-height: 28px;
+  font-size: 24px;
+  letter-spacing: -0.5px;
+  font-weight: medium;
+}
+.heading5 .mobile {
+  line-height: 24px;
+  font-size: 22px;
+  letter-spacing: -0.5px;
+}
+
+.heading6 {
+  line-height: 24px;
+  font-size: 22px;
+  letter-spacing: -0.5px;
+}
+.heading6 .mobile {
+  line-height: 24px;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+}
+
+p {
+  font-family: "Open Sans";
+  font-weight: normal;
+  line-height: 150%;
+  font-size: 16px;
+  letter-spacing: 0px;
+}
+
+p.large {
+  font-size: 18px;
+}
+
+p.small {
+  font-size: 14px;
+}
+
+label {
+  font-family: "Open Sans";
+  font-weight: normal;
+  line-height: 112.5%;
+  font-size: 16px;
+  letter-spacing: 0px;
+  text-transform: none;
+}
+
+.label-large {
+  font-size: 18px;
+}
+
+.label-small {
+  font-size: 14px;
+}
+
+caption {
+  font-family: "Open Sans";
+  font-weight: normal;
+  line-height: 112.5%;
+  font-size: 14px;
+  letter-spacing: 0px;
+}
+
+.caption {
+  font-family: "Open Sans";
+  font-weight: normal;
+  line-height: 112.5%;
+  font-size: 14px;
+  letter-spacing: 0px;
+}
+
+.tc-card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.tc-card .card-header {
+  background-color: #260046;
+  color: #ffffff;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  padding: calc($sizeBaseUnit * 4);
+}
+.tc-card .card-body {
+  background-color: #ffffff;
+  color: #585858;
+  border-radius: 0 0 8px 8px;
+  border: 1px solid #d5d5d5;
+  border-top: none;
+  overflow: hidden;
+  padding: 16px;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Add your CSS links here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/main.css">
+
+
+    <!-- ####  Add you JAVASCRIPT includes #### -->
+
+    <!-- INCLUDE :: DATA -->
+    <script src="../../data/scenario-config-02.js"></script>
+    <script src="../../data/manage-copy-01.js"></script>
+    <!-- INCLUDE :: COMPONENTS -->
+    <script type="text/JAVASCRIPT" src="../tc-navbar/tc-navbar-01.js"></script>
+    <script type="text/JAVASCRIPT" src="../tc-header/tc-header.js"></script>
+    <script type="text/JAVASCRIPT" src="../tc-footer/tc-footer.js"></script>
+    <script type="text/JAVASCRIPT" src="../tc-card/tc-card.js"></script>
+
+    <script type="text/JAVASCRIPT" src="../../js/tc-utilities.js"></script>
+
+
+    <!-- INCLUDE :: PAGE FUNCTIONS -->
+    <script type="text/JAVASCRIPT" src="tc-percent-bar.js"></script>
+
+</head>
+
+<body>
+    <!-- 
+        THIS PAGE IS BUILT USING PAGE TEMPLATE SCRIPT 
+        Add content elements using id="content-container"
+    -->
+    <script src="../tc-page-template/tc-page-template.js"></script>
+    <script>
+        // ----------------------------------
+        // SET UP BASIC PAGE TEMPLATE
+        // ----------------------------------
+
+        // ----------------------------------------------------------------
+        //   DATA SET UP - used by all pages
+        // ----------------------------------------------------------------
+
+        /* Access the insuranceProducts array within currentCover
+        var manageCoverContentArray = manageCoverContent.Pages;
+        var dorcContent = manageCoverContentArray[0].content[0];
+        var warmWelcomeContent = manageCoverContentArray[1].content[0];
+        */
+        console.log(warmWelcomeContent);
+        createPage(
+            // string – page header text
+            // "Choose your cover",
+            warmWelcomeContent["title"],
+            // string - header subhead text
+            warmWelcomeContent["subhead"],
+            // string - default or bglight
+            "default",
+            // update browser window title  
+            "Custom title"
+        ); 
+    </script>
+    <script>
+        // -----------------------------------------------------------------------------------------------------------------
+        // CREATE PAGE CONTENT STRUCTURE
+        // -----------------------------------------------------------------------------------------------------------------
+
+        // BODY CONTAINER IS id="content-container"
+        let bodyContainer = document.getElementById("content-container");
+        
+
+        let page = `<p></p>`;
+        bodyContainer.innerHTML += page;
+
+        bodyContainer.innerHTML += createPercBar();
+
+        let fixed = deathDataFixed.benefit;
+        let agedbased = deathDataAged.benefit;
+        /*
+        use these numbers to feed to the percentage bar as num1, num2
+                        ||
+                        ||
+                       \\//
+                        \/
+        */
+
+        changePerc(fixed, agedbased); // based on fixed amount
+
+    </script>
+
+
+
+
+</body>
+
+</html>

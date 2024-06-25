@@ -1,0 +1,55 @@
+@import '../../styles/global';
+
+#perc-container {
+    margin-top: $spaceSmall;
+    margin-bottom: $spaceMedium;
+}
+
+#perc-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 200px !important;
+    line-height: 0px;
+    margin-bottom: $spaceMedium;
+}
+
+.perc-labels {
+    display: flex;
+    align-content: center;
+    gap: 4px;
+}
+
+.circ {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 0px;
+    margin-bottom: -$spaceMedium;
+}
+
+#tc-perc-container {
+    display: flex;
+    min-width: 200px !important;
+    height: $sizeBaseX2;
+    border-radius: $sizeBaseX2;
+    overflow: hidden;
+}
+
+.num1 {
+    background-color: $brandColorPrimary1;
+}
+
+.num2 {
+    background-color: $brandColorPrimary2;
+    color: $brandColorPrimary2;
+}
+
+.circ.num1 {
+    background-color: rgba(0, 0, 0, 0);
+    color: $brandColorPrimary1;
+}
+
+.circ.num2 {
+    background-color: rgba(0, 0, 0, 0);
+    color: $brandColorPrimary2;
+}

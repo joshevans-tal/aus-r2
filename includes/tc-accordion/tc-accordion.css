@@ -1,0 +1,39 @@
+@charset "UTF-8";
+.tc-accordion {
+  border-bottom: 1px solid #d5d5d5;
+  padding: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.tc-accordion img {
+  vertical-align: middle;
+  margin-right: 8px; /* Add some space between the icon and text */
+}
+
+.tc-accordion-label {
+  width: 100%;
+}
+
+.tc-accordion::before {
+  content: "+";
+  color: #260046;
+  font-size: 28px;
+  font-weight: 300;
+  float: right;
+  margin-right: 8px;
+}
+
+.active::before {
+  content: "−";
+}
+
+.tc-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}/*# sourceMappingURL=tc-accordion.css.map */

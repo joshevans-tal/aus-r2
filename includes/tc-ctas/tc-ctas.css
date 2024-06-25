@@ -1,0 +1,46 @@
+.ctas {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.btn-width10 {
+  width: 10%;
+}
+
+.btn-width20 {
+  width: 20%;
+}
+
+.btn-width30 {
+  width: 30%;
+}
+
+.btn-width40 {
+  width: 40%;
+}
+
+.btn-width50 {
+  width: 50%;
+}
+
+.btn-width60 {
+  width: 60%;
+}
+
+.btn-width70 {
+  width: 70%;
+}
+
+.btn-width80 {
+  width: 80%;
+}
+
+.btn-width90 {
+  width: 90%;
+}
+
+.btn-width-auto {
+  width: auto;
+}/*# sourceMappingURL=tc-ctas.css.map */

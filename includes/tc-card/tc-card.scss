@@ -1,0 +1,99 @@
+@import '../../styles/brand';
+@import '../../styles/global';
+
+$card-head-bg-color: $themeColorBackgroundInverse;
+$card-head-bg-color-light: $themeColorBackgroundLight;
+$card-head-border-radius: $sizeBaseUnit*2;
+
+
+
+.tc-card{
+    border: none;
+    border-radius: $card-head-border-radius;
+    overflow: hidden;
+    margin-bottom: $spaceLarge;
+    // box-shadow: $elevationSmall; 
+
+    .card-header{
+        background-color: $card-head-bg-color; //$brandColorPrimary1T10
+        color: $brandColorWhite;
+        border-radius: $card-head-border-radius $card-head-border-radius 0 0  ; 
+        overflow: hidden;
+        padding: $sizeBaseX4;
+        display: flex;
+        flex-direction: column;
+        // gap: $sizeBaseUnit;
+    }
+
+    .card-body{
+        background-color: $themeColorBackgroundDefault; //$brandColorPrimary1T10
+        color: $themeColorTextDefault;
+        // border-radius: 0 0 $card-head-border-radius $card-head-border-radius   ; 
+        border: $borderSizeSm solid $themeColorBorderDefault;
+        border-top: none;
+        border-bottom: none;
+        overflow: hidden;
+        padding: $sizeBase*4;
+    }
+
+    .card-footer{
+        background-color: $themeColorBackgroundDefault; //$brandColorPrimary1T10
+        color: $themeColorTextDefault;
+        border-radius: 0 0 $card-head-border-radius $card-head-border-radius   ; 
+        border: $borderSizeSm solid $themeColorBorderDefault;
+        // border-top: none;
+        overflow: hidden;
+        padding: $sizeBase*4;
+    }
+
+    .bglight{
+        background-color: $card-head-bg-color-light; //$brandColorPrimary1T10
+        color: $themeColorTextDefault;
+    }
+
+    .footerNull{
+        padding: $sizeBase;
+        border-top: none;
+    }
+
+    
+}
+
+.card-head-flex-container {
+    // border: 1px solid salmon;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -$sizeBase;
+}
+
+.card-header,.bglight{
+    background-color: $card-head-bg-color-light; //$brandColorPrimary1T10
+    color: $themeColorTextDefault;
+}
+
+.btn-action{
+    height: $sizeBaseX8;
+    padding: 0 $sizeBaseX3;
+    line-height: $fontLineHeightBodyCondensed;
+    font-size: $fontSizeBodySmall;
+}
+
+.card-sub {
+    padding-top: $spaceMedium;
+}
+
+.info-text-hidden{
+    padding-bottom: $sizeBaseX2;
+}
+
+.footer-premium{
+
+    display: flex;
+    justify-content: end;
+
+    div{
+        display: inline-flex;
+        gap: $spaceSmall;
+    }
+}
+
