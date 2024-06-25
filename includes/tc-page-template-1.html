@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Your Page</title>
+    <!-- Add your CSS links here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+    <!-- Add JAVASCRIPT includes here -->
+    <!-- Main template components -->
+    <script type="text/JAVASCRIPT" src="./includes/tc-navbar/tc-navbar-01.js"></script>
+    <script type="text/JAVASCRIPT" src="./includes/tc-header/tc-header.js"></script>
+    <script type="text/JAVASCRIPT" src="./includes/tc-footer/tc-footer.js"></script>
+
+    <!-- Content components -->
+    <script type="text/JAVASCRIPT" src="./includes/tc-list/tc-list.js"></script>
+    <script type="text/JAVASCRIPT" src="./includes/tc-account-details/tc-account-details.js"></script>
+    <script type="text/JAVASCRIPT" src="./includes/tc-card/tc-card-head.js"></script>
+    <script type="text/JAVASCRIPT" src="./includes/tc-card/tc-card-body.js"></script>
+
+    <!-- Component data/resources -->
+    <script src="/aus-manage-01/includes/tc-current-cover/cover-data/cover-scenario-01.js"></script>
+</head>
+
+<body>
+    <!-- ADD A FLEX WRAPPER TO HELP EXTEND THE FOOTER TO THE BOTTOM OF THE PAGE REGARDLESS OF CONTENT HEIGHT -->
+    <div id="page-container" class="page-container">
+
+        <!-- ***** START page head ***** -->
+
+        <div id="navbar"></div>
+        <div id="header"></div>
+
+        <!-- ***** END page head ***** -->
+
+
+        <div class="body-container elevation-medium">
+
+            <!-- ***** START CONTENT ***** -->
+
+            <!-- account details -->
+            <div id="account-details"></div>
+
+            <!-- cover card -->
+            <div id="cover-card-01" class="tc-card">
+                <div id="card-01-header"></div>
+                <div id="card-01-body" class="card-body">
+                    <h3>Add card content here:</h3>
+
+                    <!-- *** CURRENT COVER *** -->
+                    <div id="insuranceContainer">
+                    <!-- DO NOT REMOVE -->
+                    </div>
+
+                    <!-- /// card body end /// -->
+                </div>
+            </div>
+
+
+            <!-- START CONTENT (After card) -->
+            <div class="space v-medium"><!-- SPACER! --></div>
+
+            <h3 class="">Adjust your cover in 3 steps</h3>
+
+            <!-- Expectation list -->
+            <div id="list-container-01"></div>
+
+
+
+            <!-- ***** END CONTENT ***** -->
+            <div class="space v-medium"><!-- SPACER! --></div>
+        </div>
+
+        <div id="footer"></div>
+
+        <!-- **** BUILD PAGE WITH JAVASCRIPT COMPONENTS **** -->
+        <script>
+            import "createHeader" from "./includes/tc-header/tc-header.js";
+            // NAVBAR
+            createNavbar(
+                // text array, url, element id
+                // Add text to the logo array - first item will be primary, from there text will be accent color
+                ["Demo", "Super"],
+                "./01-warm-welcome-dyn.html",
+                "navbar"
+            );
+
+            // HEADER
+            createHeader(
+                // array - heading, sub, element id, style ("" or "bglight")
+                "Template heading",
+                "Sub heading text here",
+                "header",
+                ""
+            );
+
+            // FOOTER - id only
+            createFooter("footer");
+
+
+            // LIST --- Warm welcome expectation list 01
+            createList(
+                // Write list as array
+                [
+                    "First, confirm some basic personal and emplyment information.",
+                    "Next, discover cover options.",
+                    "Find cover you like? Answer some health questions to apply."
+                    // "<img src='https://www.tal.com.au/-/media/490b2a5a335f432f93776132c98c27e4.ashx' /> an html logo!" Images can be inserted
+                ],
+                // identify container div id
+                "list-container-01");
+
+
+            // ACCOUNT DETAILS - id only
+            createAccountDetails("account-details");
+
+            // COVER CARD
+            // card header - Title, sub, onclick js, style, element id
+            createCardHeader(
+                "The cover you started with", 
+                "Learn more about your cover types", 
+                "window.alert('wow!')",
+                "", 
+                "card-01-header");
+
+            createCardHeader(
+                "The cover you started with",
+                "Learn more about your cover types",
+                "window.alert('wow!')",
+                "",
+                "card-01-header"
+            );
+
+            // // card body - content, id NOT USED FOR NOW !!!!!!!!!
+            // createCardContent(
+            //     '<![CDATA[<h3>Add card content here:</h3>< div id = "insuranceContainer" ></div >]]>',
+            //     'card-01-body'
+            // );
+
+
+        </script>
+
+        <script src="/aus-manage-01/includes/tc-current-cover/tc-current-cover-dyn.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Health questions</title>
+<!-- STYLES + FONTS -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <!-- <link rel="stylesheet" href="css/tooltip-w3c.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<!-- JAVASCRIPT -->
+    <script src="../_working/health/rcq-r2.js" type="text/javascript" ></script>
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="navbar">
+        <a href="index.html"><div class="hamburger"></div>
+        <div class="logo">
+            <span>demo</span>
+            <span>Super</span>
+        </div></a>
+    </div>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!-- <div class="tc-header bglight">
+            <div class="content ">
+                <h1 class="heading1">Your Health</h1>
+                <p class="intro">The following questions will help to establish your eligibility to transfer your life insurance cover to us.</p>
+            </div>
+            
+        </div> -->
+
+        <div class="tc-header bglight">
+            <div class="content">
+                <h1 class="heading1">Your Health</h1>
+                <p class="large">The following questions will help to establish your eligibility to transfer your life insurance cover to us.</p>
+            </div>
+            
+        </div>
+
+        <!-- START BODY CONTENT -->
+
+        <div class="body-container elevation-medium">
+        <!-- Q1 -->
+        <div id="container-1" class="form-element">
+            <p class="my-label"><span class="num">1.</span> Do you have any medical assessments, procedures or surgeries planned, or are you waiting for any test
+                results? </p>
+                <div>
+            <label class="radio-item"><input type="radio" name="choice-1" value="yes"
+                    onclick="toggleHiddenDiv.call(this, '1')">
+                Yes</label>
+            <label class="radio-item"><input type="radio" name="choice-1" value="no"
+                    onclick="toggleHiddenDiv.call(this, '1')">
+                No</label>
+            </div>
+            <div id="hiddenDiv-1" class="hidden sub">
+                <p>This paragraph is hidden by default.</p>
+            </div>
+        </div>
+        <!-- Q2 -->
+        <div id="container-2" class="form-element">
+            <p class="my-label">
+                <span class="num">2.</span>
+                Do you have an illness or injury which your doctor has advised may lead to having a limited time to live?
+            </p>
+            <div>
+                <label class="radio-item"><input type="radio" name="choice-2" value="yes"
+                    onclick="toggleHiddenDiv.call(this, '2')">
+                Yes</label>
+                <label class="radio-item"><input type="radio" name="choice-2" value="no"
+                    onclick="toggleHiddenDiv.call(this, '2')">
+                No</label>
+            </div>
+            <div id="hiddenDiv-2" class="hidden sub">
+                <p>This paragraph is hidden by default.</p>
+            </div>
+        </div>
+        <!-- Q3 -->
+        <div id="container-3" class="form-element">
+            <p class="my-label"><span class="num">3.</span>Have you been diagnosed with any mental or physical health conditions which may result in your being
+                unable to work?</p>
+            <div>
+            <label class="radio-item"><input type="radio" name="choice-3" value="yes"
+                    onclick="toggleHiddenDiv.call(this, '3')">
+                Yes</label>
+            <label class="radio-item"><input type="radio" name="choice-3" value="no"
+                    onclick="toggleHiddenDiv.call(this, '3')">
+                No</label>
+            </div>
+            <div id="hiddenDiv-3" class="hidden sub">
+                <p>This paragraph is hidden by default.</p>
+            </div>
+        </div>
+        <!-- Q4 -->
+        <div id="container-4" class="form-element">
+            <p class="my-label"><span class="num">4.</span> In the last 12 months, have you, due to illness or injury, been prevented from performing your usual
+                occupational duties partially or completely, for 10 or more consecutive days?</p>
+            <div>
+                <label class="radio-item"><input type="radio" name="choice-4" value="yes"
+                    onclick="toggleHiddenDiv.call(this, '4')">
+                Yes</label>
+            <label class="radio-item"><input type="radio" name="choice-4" value="no"
+                    onclick="toggleHiddenDiv.call(this, '4')">
+                No</label>
+            </div>
+            <div id="hiddenDiv-4" class="hidden sub">
+                <p>This paragraph is hidden by default.</p>
+            </div>
+        </div>
+        <!-- Q5a -->
+        <div id="container-5a" class="form-element">
+            <p class="my-label">
+                <span class="num">5(a).</span> Are you claiming, or are you in the process of lodging a claim for a benefit in connection with a mental or physical injury or illness from any source? Eg. </p>
+                <ul class="question-list">
+                    <li>superannuation,</li>
+                    <li>workers' compensation,</li>
+                    <li>disability pension,</li>
+                    <li>Veterans' Affairs,</li>
+                    <li>Motor Vehicle Accident scheme</li>
+                    <li>or any other insurance providing accident or illness benefits?</li>
+                </ul>
+            
+            <div>
+            <label class="radio-item"><input type="radio" name="choice-5a" value="yes"
+                    onclick="toggleHiddenDiv.call(this, '5a')">
+                Yes</label>
+            <label class="radio-item"><input type="radio" name="choice-5a" value="no"
+                    onclick="toggleHiddenDiv.call(this, '5a')">
+                No</label>
+            </div>
+            <div id="hiddenDiv-5a" class="hidden sub">
+                <p>This paragraph is hidden by default.</p>
+            </div>
+        </div>
+        <!-- Q5b -->
+        <div id="container-5b" class="form-element hidden">
+            <p class="my-label">
+                <span class="num">5(b).</span>Have you ever claimed a benefit for a mental or physical injury or illness from any source? Eg.</p>
+                <ul class="question-list hidden-margin-top"> 
+                    <li>superannuation,</li>
+                    <li>workers' compensation,</li>
+                    <li>disability pension, </li>
+                    <li>Veterans' Affairs,</li> 
+                    <li>Motor Vehicle Accident scheme,</li> 
+                    <li>or any other insurance providing accident or illness benefits?</li>
+                    </ul>
+                
+                <div>
+            <label class="radio-item"><input type="radio" name="choice-5b" value="yes"
+                    onclick="toggleHiddenDiv.call(this, '5b')">
+                Yes</label>
+            <label class="radio-item"><input type="radio" name="choice-5b" value="no"
+                    onclick="toggleHiddenDiv.call(this, '5b')">
+                No</label>
+            </div>
+            <div id="hiddenDiv-5b" class="hidden sub">
+                <p>This paragraph is hidden by default.</p>
+            </div>
+        </div>
+        <!-- Q5c -->
+        <div id="container-5c" class="form-element hidden">
+            <p class="my-label"><span class="num">5(c).</span>Does your response solely relate to a past workers' compensation claim, which occurred more than 5 years ago?</p>
+            <div>
+                <label class="radio-item"><input type="radio" name="choice-5c" value="yes"
+                    onclick="toggleHiddenDiv.call(this, '5c')">
+                Yes</label>
+            <label class="radio-item"><input type="radio" name="choice-5c" value="no"
+                    onclick="toggleHiddenDiv.call(this, '5c')">
+                No</label>
+            </div>
+            <div id="hiddenDiv-5c" class="hidden sub">
+                <p>This paragraph is hidden by default.</p>
+            </div>
+        </div>
+        <!-- Q5d -->
+        <div id="container-5d" class="form-element hidden">
+            <p class="my-label"><span class="num">5(d).</span>Have you fully recovered from that mental or physical injury or illness without any residual symptoms since?</p>
+            <div>
+            <label class="radio-item"><input type="radio" name="choice-5d" value="yes"
+                    onclick="toggleHiddenDiv.call(this, '5d')">
+                Yes</label>
+            <label class="radio-item"><input type="radio" name="choice-5d" value="no"
+                    onclick="toggleHiddenDiv.call(this, '5d')">
+                No</label>
+            </div>
+            <div id="hiddenDiv-5d" class="hidden sub">
+                <p>This paragraph is hidden by default.</p>
+            </div>
+        </div>
+
+
+        <!-- <div class="form-element"> -->
+        <div class="ctas">
+            <button class="primary btn-large btn-width-auto" id="submit-btn" disabled="true">Submit</button>
+            <button class="tertiary btn-large collapse" id="cancel-btn" onclick="window.location = '04-confirm-cover-latest.html';">Cancel</button>
+        </div>  
+        <!-- END CTAs -->
+        <div class="space v-large"><!-- SPACER! --></div>
+    </div>
+    <div class="space v-large"><!-- SPACER! --></div>
+    <!-- START FOOTER -->
+
+<div class="footer">
+    <div class="left">2021 © Fund name Pty Ltd, ABN 11 222 333 444 | AFS License No. 123456</div>
+    <div class="right"><a href="#" class="footer-link">Disclaimer</a> | <a href="#" class="footer-link">Privacy</a></div>
+</div>
+</body>
+
+</html>
