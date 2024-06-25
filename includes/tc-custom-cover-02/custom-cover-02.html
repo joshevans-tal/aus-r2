@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Edit sliders</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="../../styles/main.css">
+    <!-- Add you JAVASCRIPT includes here -->
+    <script type="text/JAVASCRIPT" src="../tc-navbar/tc-navbar-01.js"></script>
+    <!-- <script type="text/JAVASCRIPT" src="../includes/tc-navbar/tc-navbar-01.js"></script> -->
+    <script type="text/JAVASCRIPT" src="../tc-header/tc-header.js"></script>
+    <script type="text/JAVASCRIPT" src="../tc-footer/tc-footer.js"></script>
+    <script type="text/JAVASCRIPT" src="../tc-card/tc-card_archive.js"></script>
+    <script type="text/JAVASCRIPT" src="../tc-cover-item/tc-cover-item.js"></script>
+    <!-- Other head content -->
+    <script src="../../js/tc-utilities.js"></script>
+    <script src="../../data/scenario-config-01.js"></script>
+    <script src="../tc-slider-02/tc-data-slider-02.js"></script>
+    <script src="state-edit-sliders-01.js"></script>
+    <script src="state-current-deathtpd.js"></script>
+    <script src="tc-cover-custom-main-01.js"></script>
+</head>
+
+<body onresize="sliderWindowResizeReset()">
+    <!-- ADD A FLEX WRAPPER TO HELP EXTEND THE FOOTER TO THE BOTTOM OF THE PAGE REGARDLESS OF CONTENT HEIGHT -->
+    <div id="page-container" class="page-container bglight">
+        <!-- Placeholders for included content -->
+        <div id="navbar"></div>
+        <div id="header"></div>
+
+        <!-- CONTENT AREA -->
+        <div id="body-content-container" class="body-container elevation-medium">
+    <!-- Body content -->
+
+    <div id="data-test" class="tc-card"></div>
+    <div id="slider-test"></div>
+    </div>
+    <div id="footer"></div>
+    </div>
+    <script src="state-edit-sliders-01.js"></script>
+    <script src="custom-cover-main.js"></script>
+</body>

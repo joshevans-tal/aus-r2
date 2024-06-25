@@ -1,0 +1,91 @@
+.accordion-container {
+  border: 1px solid #d5d5d5;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordion-container::after {
+  content: "";
+  display: block;
+  height: 1px; /* The height of the border you want to hide */
+  margin-top: -2px; /* Negative margin to pull the container content up by 1px */
+}
+
+.accordion {
+  border-bottom: 1px solid #d5d5d5;
+  padding: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion-label {
+  font-weight: bold;
+}
+
+.cover-sum {
+  color: #2e2e2e;
+}
+
+.accordion img {
+  vertical-align: middle;
+  margin-right: 8px; /* Add some space between the icon and text */
+}
+
+.panel {
+  background-color: #eaeaea;
+  display: none;
+  overflow: hidden;
+}
+
+.row {
+  border-bottom: 1px solid #d5d5d5;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between !important;
+  align-items: stretch;
+}
+
+.row .label {
+  font-weight: bold;
+  width: auto;
+}
+
+.sub-icon {
+  margin-left: 4px;
+  margin-right: 8px;
+}
+
+.cover-value {
+  color: #585858;
+  text-align: right;
+  width: auto;
+}
+
+#totalPremiumRow {
+  background-color: #f4f2f6;
+  border: none;
+  border-radius: 0 0 8px 8px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between !important;
+  align-items: stretch;
+}
+
+#totalPremiumValue {
+  text-align: right;
+  width: auto;
+}
+
+.permonth {
+  font-weight: normal;
+}
+
+.account-details {
+  margin-bottom: 20px;
+}/*# sourceMappingURL=tc-current-cover.css.map */

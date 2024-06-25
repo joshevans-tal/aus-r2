@@ -1,0 +1,121 @@
+@import "../../styles/global";
+
+/*Dialog Styles*/
+dialog {
+	/* padding: 1rem 3rem; */
+	background: $themeColorBackgroundDefault;
+	/* max-width: (768-64)px; */
+	/* max-height: 800px; */
+	/* height: 70%; */
+	width: 60%;
+	// max-width: 768px;
+	// max-height: 80dvh;
+	/* padding-top: 2rem; */
+	overflow-x:hidden;
+	padding: 0;
+	border-radius: $borderRadiusBaseX2;
+	border: none;
+	box-shadow: $elevationLarge;
+	animation: fadeIn 1s ease both;
+	&::backdrop {
+		animation: fadeIn 1s ease both;
+		background: rgba(0, 0, 0, 0.2);
+		z-index: 2;
+		backdrop-filter: blur(20px);
+	}
+	.x {
+		color: $themeColorInteractive1;
+		border: none;
+		background: none;
+		position: absolute;
+		font-size: $sizeBaseX6;
+        text-align: right;
+		top: $spaceXSmall;
+		right: -4px;
+		transition: ease filter, transform 0.3s;
+		cursor: pointer;
+		transform-origin: center;
+		&:hover {
+            color: $themeColorInteractive1Hover;
+			transform: scale(1.1);
+		}
+	}
+}
+
+/*General Styles*/
+
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.modal-container{
+	display: flex;
+	flex-direction: column;
+    align-content: stretch;
+	max-height: 80dvh;
+    background-color: $themeColorBackgroundDefault;
+	// overflow: hidden;
+}
+.modal-content{
+	/* position: absolute; */
+	// margin: 0 5px;
+	overflow-y: scroll;
+	padding: $spaceMedium;
+	left: 0;
+}
+
+.modal-content p{
+    // margin: auto;
+    // padding: 0;
+}
+
+.modal-header{
+	// background-color: #fff;
+	padding: 0 $spaceMedium;
+	display: flex;
+	gap: 12px;
+	justify-content: space-between;
+	border-bottom: 1px solid $themeColorBorderLight;
+    box-shadow: $elevationSmall;
+}
+
+.modal-title{
+    margin-right: 32px;
+}
+
+.modal-footer{
+	/* position: fixed; */
+	// background-color: #fff;
+	border-top: 1px solid $themeColorBorderLight;
+	padding: $spaceMedium;
+	display: flex;
+	gap: $spaceSmall;
+	justify-content: flex-end;
+	align-items: center;
+    box-shadow: $elevationSmall;
+}
+
+@media only screen and (max-width: 600px) {
+    .modal-footer {
+      flex-direction: column-reverse;
+      align-items: stretch;
+    }
+
+    dialog {
+        width: 90%;
+		// padding: 5px;
+    }
+
+    .modal-container{
+        max-height: 80dvh;
+    }
+
+    .modal-title{
+        font-size: smaller;
+    }
+  }
