@@ -1,0 +1,668 @@
+@import "brand";
+
+
+// BRAND COLORS
+
+$themeColorWhite: $brandColorWhite;
+
+$themeColorBlack: $brandColorBlack;
+
+$themeColorGrayT05: $brandColorGrayT05;
+
+$themeColorGrayT10: $brandColorGrayT10;
+
+$themeColorGrayT20: $brandColorGrayT20;
+
+$themeColorGrayT30: $brandColorGrayT30;
+
+$themeColorGrayT40: $brandColorGrayT40;
+
+$themeColorGrayT50: $brandColorGrayT50;
+
+$themeColorGrayT60: $brandColorGrayT60;
+
+$themeColorGrayT70: $brandColorGrayT70;
+
+$themeColorGrayT80: $brandColorGrayT80;
+
+$themeColorGrayT90: $brandColorGrayT90;
+
+$themeColorAccent: $brandColorPrimary1T60;
+
+$themeColorAccentInverse: $brandColorPrimary1T60;
+
+
+// INTERACTIVE COLORS
+
+$themeColorInteractive1: $brandColorPrimary1;
+
+$themeColorInteractive1Hover: $brandColorPrimary1T60;
+
+$themeColorInteractive1Active: $brandColorPrimary1T60;
+
+$themeColorInteractive2: $brandColorPrimary2;
+
+$themeColorInteractive2Active: $brandColorPrimary2T60;
+
+$themeColorInteractive2Hover: $brandColorPrimary2T60;
+
+$themeColorInteractive3: $brandColorPrimary1;
+
+$themeColorInteractive3Active: $brandColorPrimary1T60;
+
+$themeColorInteractive3Hover: $brandColorPrimary1T60;
+
+$themeColorStateDisabled: $brandColorGrayT10;
+
+
+// ALERT COLORS
+
+$themeColorSuccess: $brandColorPrimary1;
+
+$themeColorSuccessInverse: $brandColorPrimary1T30;
+
+$themeColorWarning: $brandColorPrimary2;
+
+$themeColorWarningInverse: $brandColorPrimary4T50;
+
+$themeColorDanger: #b00116;
+
+$themeColorDangerInverse: #b00116;
+
+
+// BACKGROUND COLORS
+
+$themeColorBackgroundDefault: $themeColorWhite;
+
+$themeColorBackgroundInverse: $brandColorPrimary1;
+
+$themeColorBackgroundLight: $themeColorGrayT05;
+
+$themeColorBackgroundDark: $themeColorGrayT90;
+
+$themeColorBackgroundDisabled: rgba($themeColorWhite, 0.5);
+
+$themeColorBackgroundAccent: $themeColorAccent;
+
+$themeColorBackgroundAccentLight: $brandColorPrimary1T20;
+
+$themeColorBackgroundSuccess: $themeColorSuccess;
+
+$themeColorBackgroundSuccessLight: $brandColorPrimary1T20;
+
+$themeColorBackgroundWarning: $themeColorWarning;
+
+$themeColorBackgroundWarningLight: $brandColorPrimary4T30;
+
+$themeColorBackgroundDanger: $themeColorDanger;
+
+$themeColorBackgroundDangerLight: #F2DEDE;
+
+$themeColorBackgroundOverlayDark: rgba($themeColorBlack, 0.5);
+
+$themeColorBackgroundOverlayLight: rgba($themeColorBlack, 0.3);
+
+$themeColorBackgroundInverseOverlayDark: rgba($themeColorWhite, 0.5);
+
+$themeColorBackgroundInverseOverlayLight: rgba($themeColorWhite, 0.3);
+
+
+// TEXT COLORS
+
+$themeColorTextDefault: $themeColorGrayT70;
+
+$themeColorTextInverse: $themeColorWhite;
+
+$themeColorTextLight: $themeColorGrayT70;
+
+$themeColorTextDark: $themeColorGrayT90;
+
+$themeColorTextDisabled: $themeColorGrayT20;
+
+$themeColorTextAccent: $themeColorAccent;
+
+$themeColorTextSuccess: $themeColorSuccess;
+
+$themeColorTextWarning: $themeColorWarning;
+
+$themeColorTextDanger: $themeColorDanger;
+
+$themeColorTextDangerInverse: #ff767c;
+
+$themeColorTextDisabledInverse: $themeColorGrayT20;
+
+$themeColorTextLink: $themeColorInteractive2;
+
+$themeColorTextLinkInverse: $themeColorInteractive2;
+
+$themeColorTextSelected: $themeColorInteractive2;
+
+
+// BORDER COLORS
+
+$themeColorBorderDefault: $themeColorGrayT10;
+
+$themeColorBorderInverse: $themeColorWhite;
+
+$themeColorBorderDisabled: $themeColorGrayT10;
+
+$themeColorBorderLight: $themeColorGrayT05;
+
+$themeColorBorderDark: $themeColorGrayT90;
+
+$themeColorBorderAccent: $themeColorAccent;
+
+$themeColorBorderSuccess: $themeColorSuccess;
+
+$themeColorBorderWarning: $themeColorWarning;
+
+$themeColorBorderDanger: $themeColorDanger;
+
+$themeColorBorderSelected: $themeColorInteractive1;
+
+$themeColorBorderSelectedDisabled: $brandColorPrimary1T50;
+
+
+// ICON COLORS
+
+$themeColorIconDefault: $brandColorPrimary1;
+
+$themeColorIconInverse: $themeColorWhite;
+
+$themeColorIconDisabled: $themeColorGrayT10;
+
+$themeColorIconLight: $themeColorGrayT20;
+
+$themeColorIconDark: $themeColorGrayT90;
+
+$themeColorIconAccent: $themeColorAccent;
+
+$themeColorIconSuccess: $themeColorSuccess;
+
+$themeColorIconWarning: $themeColorWarning;
+
+$themeColorIconDanger: $themeColorDanger;
+
+// SIZES
+
+$sizeBaseUnit: 4px;
+
+$sizeNone: 0;
+
+$sizeBase: $sizeBaseUnit;
+
+$sizeBaseHalf: calc($sizeBaseUnit / 2);
+
+$sizeBaseX2: calc($sizeBaseUnit * 2);
+
+$sizeBaseX3: $sizeBaseUnit * 3;
+
+$sizeBaseX4: calc($sizeBaseUnit * 4);
+
+$sizeBaseX5: $sizeBaseUnit * 5;
+
+$sizeBaseX6: $sizeBaseUnit * 6;
+
+$sizeBaseX7: $sizeBaseUnit * 7;
+
+$sizeBaseX8: $sizeBaseUnit * 8;
+
+$sizeBaseX9: $sizeBaseUnit * 9;
+
+$sizeBaseX10: $sizeBaseUnit * 10;
+
+$sizeBaseX11: $sizeBaseUnit * 11;
+
+$sizeBaseX12: $sizeBaseUnit * 12;
+
+$sizeBaseX13: $sizeBaseUnit * 13;
+
+$sizeBaseX14: $sizeBaseUnit * 14;
+
+$sizeBaseX15: $sizeBaseUnit * 15;
+
+$sizeBaseX16: $sizeBaseUnit * 16;
+
+$sizeBaseX17: $sizeBaseUnit * 17;
+
+$sizeBaseX18: $sizeBaseUnit * 18;
+
+$sizeBaseX19: $sizeBaseUnit * 19;
+
+$sizeBaseX20: $sizeBaseUnit * 20;
+
+
+// ELEVATION
+$elevationFlat: none;
+
+$elevationSmall: 0 4px 16px 0 rgba($brandColorBlack, 0.1);
+
+$elevationMedium: 0 8px 24px 0 rgba($brandColorBlack, 0.1);
+
+$elevationLarge: 0 24px 40px -16px rgba(0, 0, 0, 0.16);
+
+
+// BORDER SIZES
+
+$borderRadiusNone: 0;
+
+$borderRadiusBase: $sizeBaseUnit;
+
+$borderRadiusBaseX2: $borderRadiusBase * 2;
+
+$borderRadiusBaseX4: $borderRadiusBase * 4;
+
+$borderRadiusRounded: 9999px;
+
+$borderSizeNone: 0;
+
+$borderSizeSm: 1px;
+
+$borderSizeMd: 2px;
+
+$borderSizeLg: 4px;
+
+
+// BORDER FOCUS
+
+$borderFocus: 2px solid #0091FF;
+$borderColorFocus: #0091FF;
+
+
+// FONT SIZES
+
+$fontSizeBase: 16px;
+
+$fontSizeDisplayLarge: 96px;
+
+$fontSizeDisplayMedium: 52px;
+
+$fontSizeDisplaySmall: 44px;
+
+$fontSizeDisplayXSmall: 36px;
+
+$fontSizeHeading2XLarge: 40px;
+
+$fontSizeHeadingXLarge: 36px;
+
+$fontSizeHeadingLarge: 32px;
+
+$fontSizeHeadingMedium: 28px;
+
+$fontSizeHeadingSmall: 24px;
+
+$fontSizeHeadingXSmall: 22px;
+
+$fontSizeBodyXLarge: 20px;
+
+$fontSizeBodyLarge: 18px;
+
+$fontSizeBodyDefault: $fontSizeBase;
+
+$fontSizeBodySmall: 14px;
+
+$fontSizeCaption: 12px;
+
+$fontSizeFootnote: 10px;
+
+$fontLineHeightTitles: 120%;
+
+$fontLineHeightBody: 150%;
+
+$fontLineHeightBodyCondensed: 112.5%;
+
+$fontWeightLight: light;
+
+$fontWeightRegular: normal;
+
+$fontWeightMedium: medium;
+
+$fontWeightBold: medium;
+
+$fontWeightBlack: black;
+
+$fontLetterSpacingHeadings: -0.5px;
+
+$fontLetterSpacingBody: 0px;
+
+$fontLetterSpacingExpanded: 0.6px;
+
+
+// BREAK POINTS
+
+$breakpointXSmall: 0;
+
+$breakpointSmall: 576px;
+
+$breakpointMedium: 768px;
+
+$breakpointLarge: 992px;
+
+$breakpointXLarge: 1200px;
+
+
+// GRIDS
+
+$gridContainerXSmallMaxWidth: 0;
+
+$gridContainerSmallMaxWidth: 544px;
+
+$gridContainerMediumMaxWidth: 736px;
+
+$gridContainerLargeMaxWidth: 960px;
+
+$gridContainerXLargeMaxWidth: 1168px;
+
+$gridContainerXSmallPaddingX: $sizeBaseX4;
+
+$gridContainerXSmallPaddingY: $sizeNone;
+
+$gridContainerSmallPaddingX: $sizeBaseX4;
+
+$gridContainerSmallPaddingY: $sizeNone;
+
+$gridContainerMediumPaddingX: $sizeBaseX4;
+
+$gridContainerMediumPaddingY: $sizeNone;
+
+$gridContainerLargePaddingX: $sizeBaseX8;
+
+$gridContainerLargePaddingY: $sizeNone;
+
+$gridContainerXLargePaddingX: $sizeBaseX16;
+
+$gridContainerXLargePaddingY: 0;
+
+$gridGutterNone: $sizeNone;
+
+$gridGutterXSmall: $sizeBase;
+
+$gridGutterSmall: $sizeBaseX2;
+
+$gridGutterMedium: $sizeBaseX4;
+
+$gridGutterLarge: $sizeBaseX8;
+
+$gridGutterXLarge: $sizeBaseX10;
+
+$gridSidenavWidth: $sizeBaseUnit * 64;
+
+$gridSidenavWidthLarge: $sizeBase * 80;
+
+$gridColumns: 12;
+
+$gridGutterWidth: $sizeBaseX8;
+
+
+// ANIMATION
+
+$animationTimingFast: 100ms;
+
+$animationTimingDefault: 300ms;
+
+$animationTimingSlow: 500ms;
+
+$animationTimingSlowest: 700ms;
+
+$animationTimingNone: 0;
+
+$animationEaseInCurve: cubic-bezier(0.32, 0, 0.67, 0);
+
+$animationEaseOutCurve: cubic-bezier(0.33, 1, 0.68, 1);
+
+$animationEaseInOutCurve: cubic-bezier(0.65, 0, 0.35, 1);
+
+$animationLinearCurve: cubic-bezier(0, 0, 1, 1);
+
+
+// SPACING
+
+$spaceNone: $sizeNone;
+
+$space2XSmall: $sizeBaseHalf;
+
+$spaceXSmall: $sizeBaseUnit;
+
+$spaceSmall: $sizeBaseX2;
+
+$spaceMedium: $sizeBaseX4;
+
+$spaceLarge: $sizeBaseX6;
+
+$spaceXLarge: $sizeBaseX8;
+
+$space2XLarge: $sizeBaseX10;
+
+$space3XLarge: $sizeBaseX12;
+
+$space4XLarge: $sizeBaseX16;
+
+
+// FONT FAMILY
+
+$fontFamilySans: 'Open Sans';
+
+$fontFamilyCondensed: 'Open Sans';
+
+$fontFamilySerif: Georgia, Arial, sans-serif;
+
+
+// CAPITALISATION
+
+$textCaseUppercase: uppercase;
+
+$textCaseNone: 'none';
+
+$textCaseLowercase: lowercase;
+
+$textCaseCapitalize: capitalize;
+
+
+// TEXT STYLES
+
+// *********** STYLES BELOW HAVE BEEN MOVED TO TYPOGRAPHY.SCSS ***********
+
+// .headings {
+//     font-family: $fontFamilySans;
+//     font-weight: bold;
+// }
+
+// .display1 {
+
+//     line-height: 116px;
+//     font-size: $fontSizeDisplayLarge;
+//     letter-spacing: $fontLetterSpacingHeadings;
+
+//     .mobile {
+//         font-family: $fontFamilySans;
+//         font-weight: $fontWeightBold;
+//         line-height: 60px;
+//         font-size: $fontSizeDisplayMedium;
+//         letter-spacing: $fontLetterSpacingHeadings;
+//     }
+// }
+
+// .display2 {
+
+//     line-height: 60px;
+//     font-size: $fontSizeDisplayMedium;
+//     letter-spacing: $fontLetterSpacingHeadings;
+
+
+
+//     .mobile {
+//         line-height: 52px;
+//         font-size: $fontSizeDisplaySmall;
+//         letter-spacing: $fontLetterSpacingHeadings;
+//     }
+// }
+
+
+// .display3 {
+
+//     line-height: 52px;
+//     font-size: $fontSizeDisplaySmall;
+//     letter-spacing: $fontLetterSpacingHeadings;
+
+
+//     .mobile {
+//         line-height: 44px;
+//         font-size: $fontSizeDisplayXSmall;
+//         letter-spacing: $fontLetterSpacingHeadings;
+//     }
+
+// }
+
+
+// .display4 {
+
+//     line-height: 44px;
+//     font-size: $fontSizeDisplayXSmall;
+//     letter-spacing: $fontLetterSpacingHeadings;
+
+
+//     .mobile {
+//         line-height: 40px;
+//         font-size: $fontSizeHeadingLarge;
+//         letter-spacing: $fontLetterSpacingHeadings;
+//     }
+// }
+
+// .heading1 {
+//     font-family: $fontFamilySans;
+//     font-weight: $fontWeightBold;
+//     line-height: 48px;
+//     font-size: $fontSizeHeading2XLarge;
+//     letter-spacing: $fontLetterSpacingHeadings;
+
+// }
+
+// .heading4 {
+//     font-family: $fontFamilySans;
+//     font-weight: $fontWeightBold;
+//     line-height: 32px;
+//     font-size: $fontSizeHeadingMedium;
+//     letter-spacing: $fontLetterSpacingHeadings;
+// }
+
+
+// .heading2 {
+
+//     line-height: 44px;
+//     font-size: $fontSizeHeadingXLarge;
+//     letter-spacing: $fontLetterSpacingHeadings;
+
+//     .mobile {
+//         line-height: 40px;
+//         font-size: $fontSizeHeadingLarge;
+//         letter-spacing: $fontLetterSpacingHeadings;
+//     }
+// }
+
+
+// .heading3 {
+
+//     line-height: 40px;
+//     font-size: $fontSizeHeadingLarge;
+//     letter-spacing: $fontLetterSpacingHeadings;
+
+
+//     .mobile {
+//         line-height: 32px;
+//         font-size: $fontSizeHeadingMedium;
+//         letter-spacing: $fontLetterSpacingHeadings;
+//     }
+// }
+
+
+
+// .heading5 {
+
+//     line-height: 28px;
+//     font-size: $fontSizeHeadingSmall;
+//     letter-spacing: $fontLetterSpacingHeadings;
+//     font-weight: $fontWeightBold;
+
+//     .mobile {
+//         line-height: 24px;
+//         font-size: $fontSizeHeadingXSmall;
+//         letter-spacing: $fontLetterSpacingHeadings;
+//     }
+// }
+
+
+// .heading6 {
+//     line-height: 24px;
+//     font-size: $fontSizeHeadingXSmall;
+//     letter-spacing: $fontLetterSpacingHeadings;
+
+//     .mobile {
+//         line-height: 24px;
+//         font-size: $fontSizeBodyXLarge;
+//         letter-spacing: $fontLetterSpacingHeadings;
+//     }
+
+// }
+
+
+
+// p {
+
+//     font-family: $fontFamilyCondensed;
+//     font-weight: $fontWeightRegular;
+//     line-height: $fontLineHeightBody;
+//     font-size: $fontSizeBodyDefault;
+//     letter-spacing: $fontLetterSpacingBody;
+
+    
+// }
+
+// p.large {
+//     font-size: $fontSizeBodyLarge;
+// }
+
+
+// p.small {
+//     font-size: $fontSizeBodySmall;
+// }
+
+
+// label {
+
+//     font-family: $fontFamilyCondensed;
+//     font-weight: $fontWeightRegular;
+//     line-height: $fontLineHeightBodyCondensed;
+//     font-size: $fontSizeBodyDefault;
+//     letter-spacing: $fontLetterSpacingBody;
+//     text-transform: $textCaseNone;
+//     // color: #ff767c;
+// }
+
+// .label-large {
+//     font-size: $fontSizeBodyLarge;
+// }
+
+
+// .label-small {
+//     font-size: $fontSizeBodySmall;
+// }
+
+
+// caption {
+//     font-family: $fontFamilyCondensed;
+//     font-weight: $fontWeightRegular;
+//     line-height: $fontLineHeightBodyCondensed;
+//     font-size: $fontSizeBodySmall;
+//     letter-spacing: $fontLetterSpacingBody;
+// }
+
+// .caption {
+//     font-family: $fontFamilyCondensed;
+//     font-weight: $fontWeightRegular;
+//     line-height: $fontLineHeightBodyCondensed;
+//     font-size: $fontSizeBodySmall;
+//     letter-spacing: $fontLetterSpacingBody;
+// }
+
+
+// $fontLineHeightBodyLarge: 146%;
